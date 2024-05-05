@@ -1,0 +1,3538 @@
+
+/*fon famili delgado*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&family=Quicksand:wght@300&family=Roboto:ital,wght@1,100&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    /* font-family: 'Quicksand', sans-serif; */
+}
+
+body{
+    overflow-x: hidden;
+     animation: body 5s linear;
+}
+@keyframes body {
+    0%{
+       overflow-x: hidden;
+       overflow-y: hidden;
+    }
+    100%{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+:root{
+    --color1: rgb(255, 94, 0);
+    --colo2: rgb(150, 6, 69);
+    --color-3: #232323;
+    --linear-gradient: linear-gradient(225deg, rgba(0, 0, 0, 0.859), rgba(7, 7, 7, 0.479), rgba(0, 0, 0, 0.866));
+}
+/* ---------------------------------
+--------------------------------- */
+/* contenedor de animacion */
+
+.ctn__D__anm{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: -1;
+    opacity: 0;
+    animation: ctn__anm 4s;
+}
+@keyframes ctn__anm {
+    0%{
+        background-color: var(--color-3);
+        z-index: 100;
+        opacity: 1;
+    }
+    90%{
+        background-color: var(--color-3);
+        z-index: 100;
+        opacity: 1;
+    }
+    98%{
+        background-color: white;
+        z-index: 100;
+        opacity: 1;
+    }
+    100%{
+        background-color: white;
+        z-index: -1;
+        opacity: 1;
+    }
+}
+/* -------------------------------
+---------------------------------- */
+/* contenedor__para el logo animado */
+.ctn__logo__anm{
+    font-family: 'Fjalla One', sans-serif;
+    top: -30%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+    width: 270px;
+    height: 80px;
+    background-color: transparent;
+    animation: anm__logo 4s;
+}
+@keyframes anm__logo {
+    0%{
+        transform: scale(1);
+        top: -30%;
+    }
+    50%{
+        transform: scale(1);
+        top: -30%;
+    }
+    75%{
+        top: -35%;
+        transform: scale(0.8);
+    }
+    100%{
+        top: -80%;
+        transform: scale(0.5);
+    }
+}
+.logo__f h1{
+    padding: 5px 10px;
+    background-color: white;
+    color: var(--color-3);
+}
+
+.logo__uturo h1{
+    position: relative;
+  color: white;
+  margin-top: 7px;
+  margin-left: 3px;
+}
+
+.logo__uturo h1::before{
+    position: absolute;
+    content: "";
+    left: -22%;
+    width: 125%;
+    height: 2px;
+    background-color: white;
+    margin-top: -14px;
+}
+
+.logo__uturo h1::after{
+    position: absolute;
+    content: "";
+    left: -22%;
+    width: 125%;
+    height: 2px;
+    background-color: white;
+    bottom: -18%;
+}
+/* -------------------------------------
+------------------------------------ */
+/* cars de la animacion */
+.cars__anm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid white;
+    width: 270px;
+    height: 400px;
+    background:linear-gradient(225deg, rgba(0, 0, 0, 0.859), rgba(7, 7, 7, 0.479), rgba(0, 0, 0, 0.866)), url("/galerias/acesorios/puerta-9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 50%;
+    animation: entrada 4s linear;
+    overflow: hidden;
+}
+@keyframes entrada {
+    0%{
+        background:linear-gradient(225deg, rgba(0, 0, 0, 0.859), rgba(7, 7, 7, 0.479), rgba(0, 0, 0, 0.866)), url("/galerias/acesorios/puerta-9.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-position-y: 50%;
+        width: 270px;
+        height: 400px;
+        margin-top: 0px;
+        border: 6px solid white;
+    }
+    9%{
+        background:linear-gradient(225deg, rgba(0, 0, 0, 0.859), rgba(7, 7, 7, 0.479), rgba(0, 0, 0, 0.866)), url("/galerias/acesorios/puerta-9.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-position-y: 50%;
+        width: 270px;
+        height: 400px;
+        margin-top: 0px;
+        border: 6px solid white;
+    }
+    10%{
+        background:linear-gradient(225deg, rgba(0, 0, 0, 0.859), rgba(7, 7, 7, 0.479), rgba(0, 0, 0, 0.866)), url("/galerias/acesorios/puerta-2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-position-y: 50%;
+        width: 270px;
+        height: 400px;
+        margin-top: 0px;
+        border: 6px solid white;
+    }
+    19%{
+        background:linear-gradient(225deg, rgba(0, 0, 0, 0.859), rgba(7, 7, 7, 0.479), rgba(0, 0, 0, 0.866)), url("/galerias/acesorios/puerta-2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-position-y: 50%;
+        width: 270px;
+        height: 400px;
+        margin-top: 0px;
+        border: 6px solid white;
+    }
+    20%{
+        background:linear-gradient(225deg, rgba(0, 0, 0, 0.859), rgba(7, 7, 7, 0.479), rgba(0, 0, 0, 0.866)), url("/galerias/acesorios/puerta-5.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-position-y: 50%;
+        width: 270px;
+        height: 400px;
+        margin-top: 0px;
+        border: 6px solid white;
+    }
+    29%{
+        background:linear-gradient(225deg, rgba(0, 0, 0, 0.859), rgba(7, 7, 7, 0.479), rgba(0, 0, 0, 0.866)), url("/galerias/acesorios/puerta-5.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-position-y: 50%;
+        width: 270px;
+        height: 400px;
+        margin-top: 0px;
+        border: 6px solid white;
+    }
+    30%{
+        background:linear-gradient(225deg, rgba(0, 0, 0, 0.859), rgba(7, 7, 7, 0.479), rgba(0, 0, 0, 0.866)), url("/galerias/acesorios/puerta-10.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-position-y: 50%;
+        width: 270px;
+        height: 400px;
+        margin-top: 0px;
+        border: 6px solid white;
+    }
+    39%{
+        background:linear-gradient(225deg, rgba(0, 0, 0, 0.859), rgba(7, 7, 7, 0.479), rgba(0, 0, 0, 0.866)), url("/galerias/acesorios/puerta-10.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-position-y: 50%;
+        width: 270px;
+        height: 400px;
+        margin-top: 0px;
+        border: 6px solid white;
+    }
+    40%{
+        background:linear-gradient(225deg, rgba(0, 0, 0, 0.859), rgba(7, 7, 7, 0.479), rgba(0, 0, 0, 0.866)), url("/galerias/acesorios/puerta-3.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-position-y: 50%;
+        width: 270px;
+        height: 400px;
+        margin-top: 0px;
+        border: 6px solid white;
+    }
+    49%{
+        background:linear-gradient(225deg, rgba(0, 0, 0, 0.859), rgba(7, 7, 7, 0.479), rgba(0, 0, 0, 0.866)), url("/galerias/acesorios/puerta-3.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-position-y: 50%;
+        width: 270px;
+        height: 400px;
+        margin-top: 0px;
+        border: 6px solid white;
+    }
+    50%{
+        background:linear-gradient(225deg, rgba(0, 0, 0, 0.859), rgba(7, 7, 7, 0.479), rgba(0, 0, 0, 0.866)), url("/galerias/acesorios/puerta-9.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-position-y: 50%;
+        width: 270px;
+        height: 400px;
+        margin-top: 0px;
+        border: 6px solid white;
+    }
+    60%{
+        background:linear-gradient(225deg, rgba(0, 0, 0, 0.859), rgba(7, 7, 7, 0.479), rgba(0, 0, 0, 0.866)), url("/galerias/acesorios/puerta-9.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-position-y: 50%;
+        width: 270px;
+        height: 400px;
+        margin-top: 0px;
+        border: 6px solid white;
+    }
+
+    78%{
+        height: 440px;
+        width: 60%;
+        margin-top: 20px;
+        border: 6px solid white;
+    }
+    90%{
+        width: 100%;
+        height: 70vh;
+        margin-top: 65px;
+        border: none;
+    }
+    100%{
+        width: 100%;
+        height: 70vh;
+        margin-top: 65px;
+        border: none;
+    }
+
+}
+/* --------------------------------------
+------------------------------------- */
+/* texto expertos en el cuidado de tu hogar */
+.ctn__tt__anm
+{
+    font-family: 'Quicksand', sans-serif;
+    position: absolute;
+    background-color: transparent;
+    bottom: 7%;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    animation: anm__tt__exper 2.5s;
+}
+@keyframes anm__tt__exper {
+    0%{
+        opacity: 1;
+    }
+    85%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.ctn__tt__anm h1{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+/*barra de lupa y de menu*/
+.contenedor__menu__pantalla{
+    position: absolute;
+     width: 100%;
+     height: 1vh;
+     background-color: none;
+     z-index: 100;
+     position: fixed;
+}
+
+.contenedor__De__mebu__Y__lupa{
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    left: 55%;
+    transform: translate(-10%, 35%);
+    background-color: none;
+    display: flex;
+    gap: 10px;
+    z-index: 401;
+    transform: scale(0);
+}
+/* -----------------------------------------
+------------------------------- */
+/*lupa responsive*/
+
+.contenedor__lupa{
+    cursor: pointer;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    margin-left: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+}
+
+.contenedor__lupa:hover .header__lupa{
+    border: 1px solid var(--color1);
+}
+
+.contenedor__lupa:hover .header__lupa::after{
+    background-color: var(--color1);
+}
+
+.header__lupa{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(74, 73, 73);
+    border-radius: 50%;
+    rotate: 50deg;
+}
+
+.header__lupa::after{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 1px;
+     left: 100%;
+     top: 50%;
+    background-color: rgb(74, 73, 73);
+}
+/* -------------------------------------
+--------------------------------------- */
+/* responsive lupa y su input */
+.ctn__lupa_responsive{
+    position: fixed;
+    z-index: 200;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-3);
+    margin-top: -100px;
+    transition: all .4s;
+}
+
+#input__mn{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 19px;
+    position: absolute;
+    left: 5%;
+    top: -10%;
+    border: none;
+    outline: none;
+    color: white;
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    transition: all .5s;
+    transition-delay: .1s;
+}
+
+
+#input__mn::placeholder{
+    color: white;
+}
+
+/* contenedor__De__la equiz menu */
+.ctn__x__lupa{
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    left: 85%;
+    top: 30%;
+    border-radius: 50%;
+    border: 1px solid white;
+    transition: all 1s;
+    transition-delay: .5s;
+}
+
+.x__lupa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 1px;
+    background-color: white;
+    rotate: 45deg;
+}
+
+.x__lupa::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 1px;
+    rotate: -90deg;
+    background-color: white;
+}
+
+.ctn__x__lupa:hover{
+    background-color: #333;
+}
+/* -----------------------------------
+-------------------------------------- */
+/* menu responsive*/
+.contenedor__menu{
+    cursor: pointer;
+    width: 35px;
+    margin-left: 162px;
+    margin-top: -7px;
+    height: 35px;
+    background-color: none;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.contenedor__menu:hover .header__menu{
+    background-color: var(--color1);
+}
+
+.contenedor__menu:hover .header__menu::after{
+    background-color: var(--color1);
+}
+
+.contenedor__menu:hover .header__menu::before{
+    background-color: var(--color1);
+}
+
+.header__menu{
+    top: 36%;
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background-color: rgb(74, 73, 73);
+}
+
+.header__menu::before{
+    content: "";
+    position: absolute;
+    margin-top: -10px;
+    width: 30px;
+    height: 1px;
+    background-color: rgb(74, 73, 73);
+    transform: scaleX(1);
+}
+
+.header__menu::after{
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    margin-top: 10px;
+    width: 30px;
+    height: 1px;
+    background-color: rgb(74, 73, 73);
+
+}
+
+
+/* --------------------------------------
+-------------------------------------- */
+/* contnedor__del__menu */
+
+
+.contenedor__de__opciones__barra__ne__navegacion{
+    position: absolute;
+    position: fixed;
+    width: 60%;
+    height: 100vh;
+    background-color: var(--color-3);
+    left: -60%;
+    z-index: 101;
+    transition: .6s;
+    transition-delay: .1s;
+    overflow-y: scroll;
+}
+
+.contenedor__de__opciones__barra__ne__navegacion::-webkit-scrollbar{
+    background-color: rgba(255, 255, 255, 0.396);
+    width: 5px;
+}
+
+
+
+.contenedor__de__opciones__barra__ne__navegacion::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 50px;
+    width: 5px;
+}
+ 
+/**/
+
+/*estilos de botones menu responsive*/
+
+ .ctn__mn__a{
+    position: absolute;
+    left: -50%;
+    top: 10%;
+    opacity: 0;
+    width: 200px;
+    height: 100%;
+    transition: all 0.8s;
+    transition-delay: .4s;
+    background-color: var(--color-3);
+    z-index: 200;
+}
+
+.contenedor__de__opciones__barra__ne__navegacion .ctn__mn__a a{
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    color: white;
+    display: block;
+    left: 0;
+    top: 0;
+    padding: 14px 14px;
+    transition: .3s;
+    position: relative;
+}
+
+.contenedor__de__opciones__barra__ne__navegacion .ctn__mn__a a:hover{
+    background-color: #333;
+    color: white;
+    transition: .3s;
+
+}
+
+.mn__new::before{
+    position: absolute;
+    content: "Nuevo";
+    top: 0%;
+    left: 50%;
+    background-color: white;
+    font-size: 11px;
+    font-weight: bold;
+    color: var(--color-3);
+    padding: 3px 8px;
+    top: 2%;
+    border-radius: 30px;
+}
+
+/* --------------------------------
+---------------------------------- */
+/* contenedor__De__la equiz menu */
+.ctn__x__mn{
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    left: 80%;
+    top: 5%;
+    border-radius: 50%;
+    border: 1px solid white;
+    transition: all 1s;
+}
+
+.x__menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 1px;
+    background-color: white;
+    rotate: 45deg;
+}
+
+.x__menu::before{
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 1px;
+    rotate: -90deg;
+    background-color: white;
+}
+
+.ctn__x__mn:hover{
+    background-color: #333;
+}
+/* -------------------------------
+--------------------------------- */
+/*barra de la derecha*/
+
+.barra__izquierda__navegacion{
+ 
+    position: absolute;
+    position: fixed;
+    width: 70px;
+    height: 300px;
+    background-color: transparent;
+    left: 95%;
+    bottom: 20%;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    z-index: 95;
+   animation: anm__derecha 2.5s;
+   animation-delay: 3.8s;
+}
+@keyframes anm__derecha {
+    0%{
+        opacity: 0;
+    }
+}
+
+
+.barra{
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.465);
+    margin-top: 3px;
+    border-radius: 3px;
+    backdrop-filter: blur(15px);
+    justify-content: center;
+
+}
+
+.barra:hover{
+    background-color: rgb(99, 98, 98);
+}
+
+/*reserva*/
+
+.reserva{
+    font-family: 'Quicksand', sans-serif;
+    
+    position: absolute;
+    margin-left: -357px;
+    margin-top: -65px;
+    background-color: none;
+    height: 80px;
+    font-size: 13px;
+    opacity: 0;
+    z-index: 80;
+
+}
+
+
+
+.barra img{
+    width: 40px;
+    margin-top: 9px;
+    z-index: 5;
+    transition: all .2s;
+
+}
+
+.barra:hover img{
+    transform: scale(1.2);
+   
+}
+
+
+
+
+/*reservar mi cita*/
+
+
+.barra1{
+    font-family: 'Quicksand', sans-serif;
+}   
+
+.barra1::before{
+    position: absolute;
+    content: "Agendar cita";
+    background-color: var(--color1);
+    margin-left: -133px;
+    margin-top: 9px;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: all .3s;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.barra1::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: all .3s;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid rgb(255, 94, 0);
+    rotate: -90deg;
+    margin-left: -97px;
+    margin-top: 1px;
+}
+
+.barra1:hover::after{
+  
+    transform: scalex(1);
+  
+}
+
+.barra1:hover::before{
+    transform-origin: left;
+    transform: scalex(1);
+}
+
+
+/*personaliza*/
+
+.barra2{
+
+    font-family: 'Quicksand', sans-serif;
+}   
+
+.barra2::before{
+    position: absolute;
+    content: "Personalizar mi puerta";
+    background-color: var(--color1);
+    margin-left: -189px;
+    margin-top: 9px;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: all .3s;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.barra2::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: all .3s;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid rgb(255, 94, 0);
+    rotate: -90deg;
+    margin-left: -96px;
+    margin-top: 1px;
+}
+
+.barra2:hover::after{
+  
+    transform: scalex(1);
+  
+}
+
+.barra2:hover::before{
+    transform-origin: left;
+    transform: scalex(1);
+}
+
+/*contactanos*/
+.barra3{
+    font-family: 'Quicksand', sans-serif;
+}   
+
+.barra3::before{
+    position: absolute;
+    content: "Contactanos";
+    background-color: var(--color1);
+    margin-left: -132px;
+    margin-top: 9px;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: all .3s;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.barra3::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: all .3s;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid rgb(255, 94, 0);
+    rotate: -90deg;
+    margin-left: -97px;
+    margin-top: 1px;
+}
+
+.barra3:hover::after{
+  
+    transform: scalex(1);
+  
+}
+
+.barra3:hover::before{
+    transform-origin: left;
+    transform: scalex(1);
+}
+
+/*rastear mi pedido*/
+.barra4{
+    font-family: 'Quicksand', sans-serif;
+}   
+
+.barra4::before{
+    position: absolute;
+    content: "Rastrear mi pedido";
+    background-color: var(--color1);
+    margin-left: -170px;
+    margin-top: 9px;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: all .3s;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.barra4::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: all .3s;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid rgb(255, 94, 0);
+    rotate: -90deg;
+    margin-left: -97px;
+    margin-top: 1px;
+}
+
+.barra4:hover::after{
+  
+    transform: scalex(1);
+  
+}
+
+.barra4:hover::before{
+    transform-origin: left;
+    transform: scalex(1);
+}
+
+
+.sebastian__flecha{
+    margin-top: 4px;
+    cursor: pointer;
+    position: relative;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.465);
+    backdrop-filter: blur(5px);
+    transform: scale(0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: all .3s;
+}
+
+.sebastian__flecha:hover{
+    background-color: rgb(99, 98, 98)
+}
+
+
+
+.sebastian__flecha::before{
+    font-family: 'Quicksand', sans-serif;
+    position: absolute;
+    content: "Ir hacia arriba";
+    background-color: var(--color1);
+    margin-left: -211px;
+    margin-top: -3px;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: all .3s;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.sebastian__flecha::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: all .3s;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid rgb(255, 94, 0);
+    rotate: -90deg;
+    margin-left: -120px;
+    margin-top: -35px;
+}
+
+  
+.flecha__Arriiba{
+    position: absolute;
+    height: 30px;
+    width: 2px; 
+    background-color: white;
+    animation: flecha__arriba 1s infinite linear;
+}
+
+@keyframes flecha__arriba {
+    0%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+    
+}
+
+.sebastian__flecha:hover::after{
+  
+    transform: scalex(1);
+  
+}
+
+.sebastian__flecha:hover::before{
+    transform-origin: left;
+    transform: scalex(1);
+}
+
+/*ENCABEZADO DE LA PAGINA Y SU ANIMACION DE CAIDA*/
+
+
+.contenedor__de__logo{
+    position: absolute;
+    background-color: none;
+    width: 230px;
+    height: 80px;
+    margin-left: 30px;  
+    transition: all .3s;
+}
+
+.contenedor__de__logo:focus,
+.contenedor__de__logo:active{
+    transform: scale(0.9);
+}
+
+.contenedor__de__logo:hover{
+    cursor: pointer;
+}
+
+.contenedor__de__logo:hover h1{
+    color: var(--colo2);
+
+}
+
+.contenedor__de__logo:hover .logo__futu h1{
+    background-color: var(--colo2);
+    color: white;
+}
+
+.contenedor__de__logo:hover h1::before{
+    transform: scalex(0);
+    background-color: var(--colo2);
+}
+
+.contenedor__de__logo:hover h1::after{
+    transform: scaleX(0);
+    background-color: var(--colo2);
+}
+
+header .logo__futu{
+  position: absolute;
+ 
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-left: -35px;
+  margin-top: -5px;
+  z-index: 1000;
+}
+
+header .logo__futu h1{
+    padding: 4px 10px;
+    color: white;
+    left: 0;
+    top: 0;
+    background-color: var(--color1);
+    transition: all .3s;
+}
+
+header .logo__futu h1::before{
+    position: none;
+    content: "";
+    width: 0;
+    height: 0;
+}
+
+header .logo__futu h1::after{
+    position: none;
+    content: "";
+    width: 0;
+    height: 0;
+}
+
+
+
+.header{
+    position: fixed;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:white;
+    width: 100%;
+    height: 150px;
+    z-index: 99;
+    margin-top: -0px;
+    animation: header 2.5s;
+    animation-delay: 3.3s;
+    box-shadow: 5px 5px 15px rgba(103, 103, 103, 0.534);  
+    
+}
+@keyframes header {
+    0%{
+        transform: translateY(-300px);
+    }
+    
+}
+
+.header h1{
+    font-family: 'Fjalla One', sans-serif;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 26px;
+    color: var(--color1);
+    transition: all .3s;
+    transform-origin: left;
+}
+
+.header h1::before{
+    position: absolute;
+    content: "";
+    width: 220px;
+    height: 3px;
+    margin-left: -40px;
+    margin-top: -12px;
+    background-color: var(--color1);
+    transition: all .3s;
+}
+
+.header h1::after{
+    position: absolute;
+    content: "";
+    width: 220px;
+    height: 3px;
+    margin-top: 48px;
+    margin-left: -210px;
+    background-color: var(--color1);
+    transition: all .3s;
+    transition-delay: .2s;
+}
+
+.contenedor__barra__De__busqueda{
+    position: absolute;
+    background-color: transparent;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#inputSearch{
+    left: 0;
+    top: 0;
+    font-family: 'Quicksand', sans-serif;
+    padding: 16px 20px;
+    border-radius: 30px;
+    color: var(--color-1);
+    width: 560px;
+    border:  1px solid #b2b2b2;
+    outline: none;
+    transition: all .3s;
+}
+
+
+#inputSearch:focus{
+    border-radius: 0px 30px 30px 0px;
+   border: 1px solid rgba(255, 132, 0, 0.665);
+}
+
+#inputSearch:hover{
+    box-shadow: 0px 0px 20px rgba(201, 200, 200, 0.535);
+}
+
+#inputSearch::placeholder{
+    color: #696868;
+}
+/* --------------------------------------
+---------------------------------------- */
+/* nav */
+
+.heade{
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    position: absolute;
+    background-color: var(--color1);
+    color: white;
+    padding: 13px 36px;
+    margin-left: 436px;
+    margin-top: -1px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.heade:hover{
+    cursor: pointer;
+    background-color: var(--colo2);
+    transition: .3s;
+}
+
+
+.hea-1{
+    position: absolute;
+    
+    background-color: none;
+    margin-left: 1050px;
+    margin-top: 10px;
+    width: 300px;
+    
+}
+
+
+
+nav{
+    padding: 10px 90px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background-color: #e7e7e7;
+    margin-top: 90px;
+}
+
+
+
+nav a{
+    text-decoration: none;
+    color: #000000;
+    border-radius: 3px;
+    padding: 11px 11px;
+    transition: all .3s ease-in-out;
+
+}
+
+nav a:hover{
+    background-color: #333;
+    color: white;
+    transition: .3s;
+}
+
+.nuevo__bar::after{
+  position: absolute;
+  content: "Nuevo";
+  font-size: 11px;
+  font-weight: bold;
+  color: white;
+  padding: 3px 8px;
+  top: 2%;
+  margin-left: -30px;
+  border-radius: 30px;
+  background-color: var(--color1);
+}
+
+.head{
+    background-color: none;
+    display: flex;
+    gap: 0px;
+}
+/* --------------------------------
+--------------------------- */
+/*nav secundario*/
+.contenedor__nav__Secundario{
+    font-family: 'Quicksand', sans-serif;
+    position: absolute;
+    margin-top: -48px;
+    left: 35%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    display: flex;
+    transform: scale(0);
+}
+
+
+
+.contenedor__nav__Secundario a{
+    padding: 20px;
+}
+
+.contenedor__nav__Secundario a:hover{
+    color: var(--color1);
+    background-color: transparent;
+}
+/*barra de navegacion de busqueda*/
+
+
+#box__search{
+    font-family: 'Quicksand', sans-serif;
+    position: fixed;
+    top: 70px;
+    left: 50%;
+    width: 560px;
+    max-height: 380px;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    z-index: 99;
+    overflow: hidden;
+    display: none;
+}
+#box__search li a{
+    font-size: 17px;
+    position: relative;
+   text-decoration: none;
+   display: block;
+   width: 100%;
+   color: black;
+   padding: 15px 70px;
+}
+
+#box__search li a::before{
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 17px;
+    left: 5%;
+    background-color: transparent;
+    background-image: url("/galerias/acesorios/icon__crt__bcd.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#box__search li a:hover{
+    color: var(--color1);
+    background-color: #f3f3f3;
+}
+
+#cover__ctn__search{
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.382);
+    backdrop-filter: blur(5px);
+    z-index: 98;
+    display: none;
+}
+/* ------------------------------------
+--------------------------------- */
+/*cruz search*/
+.contendor__crux{
+    cursor: pointer;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    top: 80%;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+
+
+.crux__1{
+    position: absolute;
+    width: 35px;
+    height: 1px;
+    transform: rotate(45deg);
+    background-color: black;
+    transition: all .6s;
+}
+
+.contendor__crux:hover .crux__1{
+    rotate: 360deg;
+    background-color: var(--color1);
+}
+.contendor__crux:hover .crux__2{
+   rotate: 360deg;
+   background-color: var(--color1);
+}
+
+.crux__2{
+    position: absolute;
+    width: 35px;
+    height: 1px;
+    transform: rotate(-45deg);
+    background-color: black;
+    transition: all .6s;
+}
+
+
+
+.contendor__crux::after{
+    position: absolute;
+    content: "Cerrar";
+    background-color: var(--color1);
+    transition: all .3s;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 30px 0px 0px 30px;
+    margin-left: -180px;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.contendor__crux::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: all .3s;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid rgb(255, 94, 0);
+    rotate: -90deg;
+    margin-left: -134px;
+    margin-top: -32px;
+
+}
+
+.contendor__crux:hover::after{
+    transform: scaleX(1);
+}
+
+.contendor__crux:hover::before{
+    transform: scaleX(1);
+}
+
+
+
+
+
+/* -----------------------------------
+--------------------------- */
+
+
+/* --------------------------------------------
+---------------------------------------------- */
+/*section de imagen pricipal*/
+
+.principal{
+    width: 100%;
+    height: 90vh;
+    background-color: transparent;
+}
+
+.principa{
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    position: fixed;
+    bottom: 9%;
+    background-position-y: 50%;
+}
+/* --------------------------------------------------
+-------------------------------------------------- */
+.black{
+    position: absolute;
+    background:  var(--linear-gradient);
+    width: 100%;
+    height: 100%;
+}
+/* cambios de imagenes */
+.principa-2{
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    background-color: none;
+   background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 50%;
+    position: fixed;
+    animation: fondo 20s infinite linear alternate-reverse;
+    animation-delay: 4s;
+}
+@keyframes fondo{
+    0%{
+      
+        background-image: url("/galerias/acesorios/puerta-6.webp");
+    
+    }
+    20%{
+      
+        background-image: url("/galerias/acesorios/puerta-6.webp");
+    
+    }
+    
+    25%{
+      
+        background-image: url("/galerias/acesorios/puerta-2.jpg");
+    
+    }
+    45%{
+      
+        background-image: url("/galerias/acesorios/puerta-2.jpg");
+    
+    }
+    
+    50%{
+       
+        background-image: url("/galerias/acesorios/puerta-4.webp");
+    
+    }
+    70%{
+       
+        background-image: url("/galerias/acesorios/puerta-4.webp");
+    
+    }
+    
+    75%{
+     
+        background-image: url("/galerias/acesorios/puerta-9.jpg");
+    
+    }
+    100%{
+     
+        background-image: url("/galerias/acesorios/puerta-9.jpg");
+    
+    }
+}
+/* ------------------------------------------ ---
+------------------------------------------------*/
+/* textos y titulos izquierda abjo */
+.princip-1{
+    font-family: 'Quicksand', sans-serif;
+    position: absolute;
+    background-color: transparent;
+    height: 100px;
+    margin-top: -100px;
+    display: flex;
+    margin-left: 700px;
+    margin-top: 350px;
+    animation: bf__tt 2s linear;
+    animation-delay: 3.3s;
+}
+
+.princip-1::before{
+    position: absolute;
+    content: "";
+    width: 130%;
+    top: 45%;
+    left: -2%;
+    transform: translateY(-50%);
+    height: 2px;
+    background-color: var(--color1);
+    animation: bf__tt 2s linear;
+    animation-delay: 3.3s;
+}
+@keyframes bf__tt {
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+}
+
+.princip-1::after{
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 13px;
+    background-color: var(--color1);
+    border-radius: 50%;
+    top: 45%;
+    left: -3%;
+    transform: translateY(-50%);
+}
+
+.h1__al{
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+}
+
+.princip-1 p{
+    color: white;
+    font-size: 26px;
+    animation: anm__tt 1.5s;
+    animation-delay: 3.3s;
+}
+@keyframes anm__tt {
+    0%{
+        transform: translateY(200px);
+    }
+}
+
+
+.princip-1 h1{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+    animation: anm__tt 1.7s;
+    animation-delay: 3.3s;
+}
+
+.h1__al:nth-child(3){
+    position: absolute;
+    bottom: 0%;
+    padding: 0 0;
+    left: -3%;
+    display: block;
+    background-color: transparent;
+}
+
+.h1__al:nth-child(3) h1{
+    color: rgba(255, 255, 255, 0.549);
+    font-size: 24px;
+    padding: 0;
+}
+
+
+
+
+
+/* ------------------------
+-------------------------- */
+/* texto de la izquierda */
+
+.principa-3{
+    padding: 0px 30px;
+    font-family: 'Quicksand', sans-serif;
+    width: 450px;
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.h1__all{
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.principa-3 h1{
+    font-size: 38px;
+    text-shadow: 3px 3px 3px black;
+    font-weight: bold;
+    animation: anm__ttt 1.7s;
+    animation-delay: 3.3s;
+}
+@keyframes anm__ttt {
+    0%{
+        transform: translateY(150px);
+    }
+}
+.principa-3 h1::after{
+    position: absolute;
+    content: "";
+    width: 490px;
+    height: 2px;
+    background-color: var(--color1);
+    margin-left: -470px;
+    margin-top: 65px;
+    animation: bf__ttt 2s linear;
+    animation-delay: 3.3s;
+}
+
+.principa-3 h1::before{
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: var(--color1);
+    margin-left: 450px;
+    margin-top: 60px;
+    animation: bf__ttt 2s linear;
+    animation-delay: 3.3;
+  
+
+}
+@keyframes bf__ttt {
+    0%{
+        opacity: 0;
+    }
+  
+}
+
+.principa-3 p{
+    text-shadow: 3px 3px 3px black;
+    margin-top: 30px;
+    font-size: 25px;
+    color: white;
+    background-color: transparent;
+    overflow: hidden;
+    animation: anm__ttt 1.5s;
+    animation-delay: 3.3s;
+}
+/* ------------------------------
+---------------------------------- */
+/*aca empieza las letras animadas*/
+
+.contenedor{
+    font-family: 'Quicksand', sans-serif;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 173px;
+    margin-top: 174px;
+    z-index: 4;
+    height: 100px;
+    background-color: transparent;
+    overflow: hidden;
+    animation: anm__tttt 2s;
+    animation-delay: 3.3s;
+
+}
+@keyframes anm__tttt {
+    0%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.contenedor__texto{
+    display: flex;
+    align-items: center;
+    width: 700px;
+    z-index: 1;
+}
+
+.contenedor__texto h1{
+   font-size: 20px;
+    color: rgb(255, 0, 0);
+    margin-right: 10px;
+    
+}
+
+.contenedor__textos__animacion{
+    font-size: 25px;
+    display: flex;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    background-color: none;
+}
+
+.barra__escritura{
+    
+    background-color:var(--color1);
+    width: 3px;
+    height: 50px;
+    margin-left: 5px;
+    animation: barra-animacion 1s ease infinite;
+    transition: 0.4s;
+}
+
+
+
+
+/*barra de escritura animada*/
+
+
+@keyframes barra-animacion{
+    50%{
+        height: 20px;
+        transition: 0.4s;
+        background-color: var(--color1);
+    }
+}
+
+/* --------------------------------------
+--------------------------------------------- */
+/* diseña tu puerta boton principal */
+
+.ctn__dis{
+    padding: 15px 0px;
+    height: 21px;
+    position: relative;
+    background-color: transparent;
+    margin-top: 270px;
+    margin-left: 30px;
+    overflow: hidden;
+}
+
+#diseñar__mi__puerta{
+    text-transform: uppercase;
+    position: relative;
+    font-size: 17px;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    background-color: var(--color1);
+    color: white;
+    padding: 15px 120px;
+    border-radius: 3px;
+    transition: .3s;
+    left: 0;
+    bottom: 0;
+    animation: anm__btn 1.8s;
+    animation-delay: 3.3s;
+    overflow: hidden;
+   
+}
+@keyframes anm__btn {
+    0%{
+        bottom: -300%;
+        opacity: 0;
+    }
+}
+
+#diseñar__mi__puerta::before{
+    position: absolute;
+    content: "! Personalizar mi puerta ¡";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(225deg, rgb(255, 98, 0), rgb(253, 66, 166));
+    color: white;
+    border-radius: 3px;
+    transition: all .4s;
+}
+
+#diseñar__mi__puerta:hover::before{
+    bottom: 0%;
+}
+
+
+/* ---------------------------------------
+---------------------------------------- */
+/* flecha ctn */
+.contenedor__De__flecha{
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    margin-left: 230px;
+    margin-top: 350px;
+    overflow: hidden;
+}
+
+.contenedor__De__flecha:hover{
+    background-color: rgb(207, 206, 206);
+}
+
+.contenedor__De__flecha img{
+    width: 30px;
+    animation: flechaabajo 2s infinite linear;
+
+}
+@keyframes flechaabajo {
+    0%{
+        transform: translateY(-60px);
+    }
+    
+}
+
+/*flecha donde nos dirige al foemulario*/
+
+.flecha__direccion{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: none;
+    margin-top: 500px;
+    left: 50%;
+}
+
+
+/*aca se terminan las letras animadas*/
+
+/*puertas redondas*/
+
+.puertas__redondas{
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    height: 80vh;
+    margin-top: 00px;
+    background-color: rgb(248, 248, 249);
+    gap: 40px;
+    z-index: 26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.puertas__redonda-1{
+    position: relative;
+    top: -8%;
+}
+
+.puertas__redondas img{
+    width: 200px;
+    border-radius: 50%;
+    margin-left: 30px;  
+    transition: .3s;  
+}
+
+.puertas__redonda-1:hover img{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .3s;
+}
+
+.puertas__redonda-1{
+    width: 200px;
+    height: 200px;
+    background-color: violet;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.ctn__tt__opa__0{
+    cursor: pointer;
+    position: absolute;
+    content: "Nuevo";
+    left: 0;
+    width: 200px;
+    height: 200px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 17px;
+    text-transform: uppercase;
+    background:  linear-gradient(to left bottom, rgba(255, 94, 0, 0.541), rgba(255, 94, 0, 0.49),rgba(222, 0, 148, 0.515));
+    bottom: -30%;
+    transition: all .4s;
+    overflow: hidden;
+    border-radius: 00%;
+    opacity: 0;
+}
+
+.puertas__redonda-1:hover .ctn__tt__opa__0{
+    bottom: 0%;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.puertas__redonda-1 img{
+    margin-top: 0;
+    margin-left: 0;
+
+}
+
+/* ---------------------------------
+---------------------------------- */
+/* imagen 2 puerta redonda */
+
+.pt__rd__2{
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.puertas__redonda-2 img{
+    margin-top: 0;
+    margin-left: 0;
+
+}
+/* ------------------------------------------
+--------------------------------------------- */
+/* imagen 3 puerta redonda */
+.pt__rd__3{
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.puertas__redonda-3 img{
+    margin-top: 0;
+    margin-left: 0;
+
+}
+/*  */
+.puertas__redonda-4{
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.puertas__redonda-4 img{
+    margin-top: 0;
+    margin-left: 0;
+
+}
+
+.ctn__plb__pr__rd{
+    position: absolute;
+    display: flex;
+    background-color: transparent;
+    gap: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 20%;
+
+}
+
+.plb__all h1{
+    text-align: center;
+    font-weight: 100;
+    font-size: 19px;
+    background-color: transparent;
+    color: #5f5f5f;
+}
+/*section 2 imagenes*/
+
+.segundas__puertas{
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    height: 165vh;
+    background-color: white;
+    margin-top: 270px;
+    z-index: 25;
+}
+
+.segundas__puertas h1{
+    font-size: 24px;
+    text-align: center;
+    color: var(--color1);
+    margin-bottom: 150px;
+    margin-top: 50px;
+}
+
+.segundas__puertas h1::before{
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 2px;
+    background-color: var(--color1);
+    margin-top: 18px;
+    margin-left: -310px;
+}
+
+.segundas__puertas h1::after{
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 2px;
+    background-color: var(--color1);
+    margin-top: 18px;
+    margin-left: 10px;
+}
+
+#nuestras__puertas{
+    position: relative;
+    margin-top: 170px;
+    margin-left: 110px;
+
+}
+
+/* ----------------------------------------------
+---------------------------------------------- */
+/* anuncios de descuentos */
+.ctn__anun__des{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(to left bottom, var(--color1), var(--color1),rgb(222, 0, 148));
+    box-shadow: 5px 5px 15px rgba(236, 79, 184, 0.716);
+    overflow: hidden;
+    left: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: 5deg;
+    z-index: 20;
+}
+
+
+.ctn__anun__des h3{
+    color: white;
+    margin-left: -10px;
+}
+
+.ctn__anun__des h3::after{
+    position: absolute;
+    content: "%";
+    margin-top: -3px;
+    font-weight: bold;
+}
+
+.anun__des{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color1);
+}
+/*primer imagen*/
+
+
+.segunda__fil-1{
+    position: absolute;
+    background-color: none;
+    width: 300px;
+    margin-left: 30px;
+}
+
+.segunda__fil-1 h4{
+    margin-left: 65px;
+    margin-top: 10px;
+}
+
+.segunda__fil-1 h4::before{
+    content: "";
+    width: 80px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -6px;
+}
+
+.segunda__fil-1 h4::after{
+    content: "$350.000";
+    color: var(--color1);
+    margin-left: 30px;
+}
+
+.segunda__fil-1 p{
+    margin-top: 8px;
+    font-size: 17px;
+    color: #333;
+    margin-bottom: 10px;
+    }
+.segunda__fi-1{
+    background-color: none;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.segunda__fi-1 img{
+    width: 300px;
+    transition: .3s;
+}
+
+.segunda__fi-1 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+
+#selector-1{
+    outline: none;
+    color: #333;
+    width: 140px;
+    padding: 13px 13px;
+    border-radius: 3px;
+    border: 1px solid #b2b2b2;
+    color: #5f5f5f;
+}
+
+
+
+#selector-2{
+    outline: none;
+    width: 140px;
+    color: #333;
+    padding: 13px 13px;
+    border-radius: 3px;
+    border: 1px solid #b2b2b2;
+    color: #5f5f5f;
+}
+
+#añadir-1{
+    position: absolute;
+    background-color: var(--color1);
+    text-decoration: none;
+    color: white;
+    padding: 14px 45px;
+    border-radius: 0px;
+    margin-top: 20px;
+    transition: .3s;
+}
+
+
+#añadir-1:hover{
+    transform: translateY(-5px);
+    background-color: var(--colo2);
+    box-shadow: 5px 5px 15px rgba(150, 6, 68, 0.496);
+    transition: .3s;
+}
+/* ------------------------------------------
+------------------------------------------- */
+/* comfigurando bien los selec option */
+
+#mg__p{
+    margin-top: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.ctn__d__select{
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    gap: 15px;
+    width: 300px;
+}
+select{
+    font-family: 'Quicksand', sans-serif;
+    color: var(--color1);
+}
+
+#selector-1,
+#selector-2{
+    font-size: 14px;
+    background-color:transparent;
+    color: black;
+}
+
+#selector-1:focus,
+#selector-1:active{
+    color: var(--color1);
+    border: 1px solid var(--color1);
+}
+
+#selector-2:focus,
+#selector-2:active{
+    color: var(--color1);
+    border: 1px solid var(--color1);
+}
+
+/* configurando bien los selec margin bottom */
+.all__flex__2{
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+
+
+
+.all__flex__3{
+    background-color: transparent;
+    margin-top: -0px;
+}
+
+.all__flex__4{
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+.all__flex__6{
+    background-color: transparent;
+    margin-top: -2px;
+}
+/* ---------------------------------
+------------------------------------ */
+/*segunda imagen*/
+.segunda__fil-2{
+    position: relative;
+    background-color: transparent;
+    width: 300px;
+}
+
+
+.seg__new__2{
+   rotate: -5deg;
+}
+
+.segunda__fil-2{
+    position: relative;
+    margin-left: 357px;
+}
+
+.segunda__fil-2 p{
+    margin-top: 8px;
+    font-size: 17px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+.segunda__fil-2 h4{
+    margin-left: 65px;
+    margin-top: 10px;
+}
+
+.segunda__fil-2 h4::before{
+    content: "";
+    width: 80px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -6px;
+}
+
+.segunda__fil-2 h4::after{
+    content: "$280.058";
+    color: var(--color1);
+    margin-left: 30px;
+}
+
+/*tercer imagen*/
+
+.segunda__fil-3{
+    position: relative;
+    margin-left: 684px;
+    margin-top: -455px;
+    width: 300px;
+}
+
+.segunda__fil-3 p{
+    margin-top: 8px;
+    font-size: 17px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+.segunda__fil-3 h4{
+    margin-top: 10px;
+    margin-left: 65px;
+}
+
+.segunda__fil-3 h4::before{
+    content: "";
+    width: 80px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -6px;
+}
+
+.segunda__fil-3 h4::after{
+    content: "$380.058";
+    color: var(--color1);
+    margin-left: 30px;
+}
+
+
+
+/*cuarta imagen*/
+
+.segunda__fil-4{
+    position: relative;
+    margin-left: 1010px;
+    margin-top: -451px;
+    width: 300px;
+}
+
+.segunda__fil-4 p{
+    font-size: 17px;
+    margin-top: 6px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+.segunda__fil-4 h4{
+    margin-top: 10px;
+    margin-left: 65px;
+}
+
+.segunda__fil-4 h4::before{
+    content: "";
+    width: 80px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: -6px;
+}
+
+.segunda__fil-4 h4::after{
+    content: "$380.058";
+    color: var(--color1);
+    margin-left: 30px;
+}
+
+/* -------------------------------------------
+-------------------------------------------- */
+/*section imagenes puertas abiertas*/
+
+
+.puertas__aviertas{
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    height: 120vh;
+    background-color: white;
+    z-index: 23;
+    margin-top: 1340px;
+
+}
+
+.puertas__aviertas h1{
+    font-size: 24px;
+    text-align: center;
+    color: var(--color1);
+    margin-top: 150px;
+    margin-bottom: 120px;
+}
+
+
+
+.puertas__aviertas h1::before{
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 2px;
+    background-color: var(--color1);
+    margin-top: 18px;
+    margin-left: -310px;
+}
+
+.puertas__aviertas h1::after{
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 2px;
+    background-color: var(--color1);
+    margin-top: 18px;
+    margin-left: 10px;
+}
+/* -----------------------------------
+----------------------------------- */
+/*section de accesorios*/
+
+.accsesorios{
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+   width: 100%;
+    height: 230vh;
+    background-color: white;
+    margin-top: 2200px;
+    z-index: 15;
+}
+
+.accsesorios h1{
+    font-size: 24px;
+    text-align: center;
+    color: var(--color1);
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+
+
+
+.accsesorios h1::before{
+    position: absolute;
+    content: "";
+    width: 230px;
+    height: 2px;
+    background-color: var(--color1);
+    margin-top: 18px;
+    margin-left: -240px;
+}
+
+.accsesorios h1::after{
+    position: absolute;
+    content: "";
+    width: 230px;
+    height: 2px;
+    background-color: var(--color1);
+    margin-top: 18px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+.accsesorio{
+    background-color: none;
+    height: 360px;
+    margin-top:00px;
+}
+
+
+/*accesorio-1*/
+
+.accsesorio-1{
+    position: absolute;
+    width: 400px;
+    height: 408px;
+    overflow: hidden;
+    margin-left:50px;
+    background-color: none;
+}
+
+.accsesorio-1 img{
+    transition: .4s;
+width: 400px;
+}
+
+.accsesorio-1 img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: .4s;
+}
+
+
+/*accsesorio-2*/
+.accsesorio-2{
+    position: absolute;
+    width: 400px;
+    height: 408px;
+    overflow: hidden;
+    margin-left: 473px;
+    background-color: none;
+}
+
+.accsesorio-2 img{
+    transition: .4s;
+width: 400px;
+height: 408px;
+}
+
+.accsesorio-2 img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: .4s;
+}
+
+
+/*accsesorio-3*/
+.accsesorio-3{
+    position: absolute;
+    width: 400px;
+    height: 408px;
+    overflow: hidden;
+    margin-left: 900px;
+    background-color: none;
+}
+
+.accsesorio-3 img{
+    transition: .4s;
+width: 400px;
+height: 408px;
+}
+
+.accsesorio-3 img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: .4s;
+}
+
+
+
+/*especificaciones-1*/
+
+.accsesorios-2{
+    background-color: none;
+    width: 100%;
+    height: 200px;
+}
+
+
+.accsesorios-2 h1{
+    color: #333;
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 40px;
+}
+
+.accsesorios-2 p{
+    font-size: 17px;
+}
+
+.accsesorios-2 h1::before{
+    content: "";
+    width: 0;
+    height: 0;
+}
+
+.accsesorios-2 h1::after{
+    content: "";
+    width: 0;
+    height: 0;
+}
+
+.accsesori-1{
+    position: absolute;
+    background-color: none;
+    width: 300px;
+    color: #333;
+    margin-left: 50px;
+}
+
+.accsesori-2{
+    position: absolute;
+    background-color: none;
+    width: 300px;
+    color: #333;
+    margin-left: 475px;
+}
+
+.accsesori-3{
+    position: absolute;
+    background-color: none;
+    width: 300px;
+    color: #333;
+    margin-left: 900px;
+}
+/*barra naranja*/
+.mate-1{
+    width: 100%;
+    height: 240px;
+    background-image: linear-gradient(225deg, rgb(150, 6, 69), rgb(255, 94, 0), rgb(255, 94, 0));
+}
+
+
+.mate-1 p{
+    position: absolute;
+    margin-top: 0px;
+    font-size: 17px;
+    color: white;
+}
+
+.mate-1 h1{
+    color: white;
+    position: absolute;
+    margin-top: -40px;
+    font-size: 23px;
+}
+
+.mate-1 h1::before{
+    content: "";
+    width: 0;
+    height: 0;
+}
+
+.mate-1 h1::after{
+    content: "";
+    width: 0;
+    height: 0;
+}
+
+.mat-1{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    margin-left: 30px;
+    margin-top: 80px;
+    background-color: none;
+}
+
+
+
+    
+
+.mat-2{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    background-color: none;
+    margin-left: 480px;
+    margin-top: 80px;
+}
+    
+
+.mat-3{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    background-color: none;
+    margin-left: 930px;
+    margin-top: 80px;
+}
+
+
+
+.mat-4{
+    position: absolute;
+    margin-left: 1065px;
+    margin-top: 200px;
+    width: 500px;
+    color: rgba(255, 255, 255, 0.17);
+}
+
+.mate-2{
+    width: 100%;
+    height: 300px;
+    background-color: none;
+}
+
+.ma-1{
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    background-color: none;
+    margin-top: 60px;
+    margin-left: 200px;
+}
+
+.ma-1 h1{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #333;
+}
+
+.ma-1 h1::before{
+
+    content: "";
+    width: 0;
+    height: 0;
+}
+
+.ma-1 h1::after{
+    content: "";
+    width: 0;
+    height: 0;
+}
+
+.ma-1 a{
+    position: absolute;
+    text-decoration: none;
+    background-color: var(--color1);
+    padding: 15px 150px;
+    font-size: 16px;
+    margin-top: 30px;
+    border-radius: 30px;
+    color: white;
+    transition: .3s;
+}
+
+.ma-1 a:hover{
+    transform: translateY(-5px);
+    background-color: var(--colo2);
+    box-shadow: 5px 5px 15px rgba(150, 6, 68, 0.455);
+    transition: .3s;
+}
+
+
+.ma-2{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    margin-left: 750px;
+    margin-top: 30px;
+    background-color: none;
+}
+
+#ver__Cosas-1{
+    position: absolute;
+    text-decoration: none;
+    background-color: var(--color1);
+    padding: 15px 150px;
+    margin-top: 30px;
+    border-radius: 30px;
+    color: white;
+    transition: .3s;
+}
+
+#ver__Cosas-1:hover{
+    transform: translateY(-5px);
+    background-color: var(--colo2);
+    box-shadow: 5px 5px 15px rgba(150, 6, 68, 0.455);
+    transition: .3s;
+}
+
+#ver__Cosas-2{
+    position: absolute;
+    text-decoration: none;
+    background-color: none;
+    border: 1px solid var(--color1);
+    padding: 15px 143px;
+    margin-top: 100px;
+    border-radius: 30px;
+    color: var(--color1);
+    transition: .3s;
+}
+
+#ver__Cosas-2:hover{
+    transform: translateY(-5px);
+    background-color: var(--colo2);
+    box-shadow: 5px 5px 15px rgba(150, 6, 68, 0.455);
+    transition: .3s;
+    border: 1px solid var(--colo2);
+    color: white;
+}
+
+#ver__Cosas-3{
+    position: absolute;
+    text-decoration: none;
+    background-color: none;
+    border: 1px solid var(--color1);
+    padding: 15px 138px;
+    margin-top: 170px;
+    border-radius: 30px;
+    color: var(--color1);
+    transition: .3s;
+}
+
+#ver__Cosas-3:hover{
+    transform: translateY(-5px);
+    background-color: var(--colo2);
+    box-shadow: 5px 5px 15px rgba(150, 6, 68, 0.455);
+    transition: .3s;
+    border: 1px solid var(--colo2);
+    color: white;
+}
+/* -------------------
+------------------- */
+/* footer marcas */
+.footer__mr{
+    position: absolute;
+    width: 100%;
+    height: 43vh;
+    background-color: var(--color-3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    top: -36%;
+}
+
+.footer__mr h1{
+    font-size: 24px;
+    position: absolute;
+    top: 18%;
+}
+
+.footer__mr::after{
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: .1px;
+    background-color: white;
+    bottom: 0%;
+}
+
+.icon__mr{
+    width: 230px;
+    height: 100px;
+    margin-top: 90px;
+    background-color: transparent;
+    background-image: url("/galerias/acesorios/icon__mr__1-removebg-preview.png");
+    background-position: center;
+    background-size: cover;
+    transition: all .2s;
+}
+
+.icon__mr:hover{
+    filter: drop-shadow(3px 3px 3px black);
+    transform: scale(1.1);
+}
+
+.icon__mr:nth-child(2){
+    background-image: url("/galerias/acesorios/icon__mr__2-removebg-preview.png");
+}
+
+.icon__mr:nth-child(3){
+    background-image: url("/galerias/acesorios/icon__mr__3-removebg-preview.png");
+}
+
+.icon__mr:nth-child(4){
+    background-image: url("/galerias/acesorios/icon__mr__4-removebg-preview.png");
+}
+/* --------------------------------
+--------------------------------- */
+/*pie de pagina*/
+.footer{
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+     width: 100%;
+    height: 110vh;
+    background-color:var(--color-3);
+    z-index: 15;
+    margin-top: 3900px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctn__flex__footer{
+    position: absolute;
+    top: 10%;
+    background-color: transparent;
+    display: flex;
+    gap: 80px;
+}
+/* -----------------------
+-------------------------- */
+/* lg footer */
+
+footer .ctn__all__footer .ctn__lg{
+    font-family: 'Fjalla One', sans-serif;
+    cursor: pointer;
+    padding: 20px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+}
+
+footer .ctn__all__footer .ctn__lg:hover{
+    transform: translateY(-5px);
+    filter: drop-shadow(0px 0px 3px black);
+}
+
+footer .ctn__all__footer .ctn__lg .ctn__f h1{
+    padding: 5px 9px;
+    font-size: 35px;
+    color: var(--color-3);
+    background-color:white;
+}
+
+footer .ctn__all__footer .ctn__lg .ctn__rt h1{
+    position: relative;
+    font-size: 32px;
+    margin-left: 3px;
+}
+
+.ctn__rt h1::before{
+    position: absolute;
+    content: "";
+    width: 125%;
+    height: 3px;
+    background-color: white;
+    top: -32%;
+    left: -22%;
+}
+
+
+
+.ctn__rt h1::after{
+    position: absolute;
+    content: "";
+    width: 125%;
+    height: 3px;
+    background-color: white;
+    bottom: -32%;
+    left: -22%;
+}
+
+
+
+/* -----------------------
+------------------------ */
+/* hover a */
+.ctn__all__footer{
+    position: relative;
+    display: block;
+    background-color: transparent;
+}
+
+.ctn__all__footer h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.ctn__all__footer a{
+    position: relative;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+   padding: 9px 0px;
+}
+
+.ctn__all__footer a::before{
+    position: absolute;
+    content: "";
+    width: 36%;
+    height: 2px;
+    background-color: white;
+    bottom: 20%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .3s ease-in-out;
+}
+
+.ctn__all__footer a:hover{
+    text-shadow: 0 0 10px white;
+}
+
+.ctn__all__footer a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+/* ------------------------
+------------------------ */
+/* diferentes tamaños */
+.ctn__all__footer:nth-child(1) a:hover:nth-child(2)::before{
+    width: 67%;
+}
+
+.ctn__all__footer:nth-child(1) a:hover:nth-child(3)::before{
+    width: 68%;
+}
+
+.ctn__all__footer:nth-child(1) a:hover:nth-child(4)::before{
+    width: 100%;
+}
+
+.ctn__all__footer:nth-child(1) a:hover:nth-child(5)::before{
+    width: 70%;
+}
+/* ----------------------------
+------------------------ */
+/* segunda fila de los a */
+.ctn__all__footer:nth-child(2) a:hover:nth-child(2)::before{
+    width: 36%;
+}
+
+.ctn__all__footer:nth-child(2) a:hover:nth-child(3)::before{
+    width: 36%;
+}
+
+.ctn__all__footer:nth-child(2) a:hover:nth-child(4)::before{
+    width: 66%;
+}
+
+.ctn__all__footer:nth-child(2) a:hover:nth-child(5)::before{
+    width: 64%;
+}
+
+.ctn__all__footer:nth-child(2) a:hover:nth-child(6)::before{
+    width: 30%;
+}
+
+.ctn__all__footer:nth-child(2) a:hover:nth-child(7)::before{
+    width: 80%;
+}
+
+.ctn__all__footer:nth-child(2) a:hover:nth-child(8)::before{
+    width: 100%;
+}
+
+.ctn__all__footer:nth-child(2) a:hover:nth-child(9)::before{
+    width: 52%;
+}
+
+/* ----------------
+---------------- */
+/* fila__2 footer a */
+.ctn__all__footer:nth-child(3) a:hover:nth-child(2)::before{
+    width: 71%;
+}
+
+.ctn__all__footer:nth-child(3) a:hover:nth-child(3)::before{
+    width: 32%;
+}
+
+.ctn__all__footer:nth-child(3) a:hover:nth-child(4)::before{
+    width: 50%;
+}
+
+.ctn__all__footer:nth-child(3) a:hover:nth-child(5)::before{
+    width: 30%;
+}
+
+.ctn__all__footer:nth-child(3) a:hover:nth-child(6)::before{
+    width: 35%;
+}
+
+.ctn__all__footer:nth-child(3) a:hover:nth-child(7)::before{
+    width: 100%;
+}
+/* ---------------------------
+------------------------------- */
+/* fila__3 footer a */
+.ctn__all__footer:nth-child(4) a:hover:nth-child(2)::before{
+    width: 50%;
+}
+
+.ctn__all__footer:nth-child(4) a:hover:nth-child(3)::before{
+    width: 100%;
+}
+
+.ctn__all__footer:nth-child(4) a:hover:nth-child(4)::before{
+    width: 100%;
+}
+
+.ctn__all__footer:nth-child(4) a:hover:nth-child(5)::before{
+    width: 84%;
+}
+
+.ctn__all__footer:nth-child(4) a:hover:nth-child(6)::before{
+    width: 50%;
+}
+
+
+
+
+
+/* --------------------
+------------------- */
+/*iconos footer*/
+.ctn__icon__ter{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  bottom: -28%;
+  background-color: transparent;
+}
+
+.ctn__icon__footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 100%;
+    gap: 10px;
+    margin: 0 180px 0 0;
+}
+
+
+.icon__footer{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 15px;
+    border: 2px solid white;
+    background-image: url("/galerias/acesorios/icon__footer__1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .2s;
+    margin-top: -10px;
+}
+
+.icon__footer:nth-child(2){
+    background-image: url("/galerias/acesorios/icon__footer__2.png");
+}
+
+.icon__footer:nth-child(3){
+    background-image: url("/galerias/acesorios/icon__footer__3.png");
+}
+
+.icon__footer:nth-child(4){
+    background-image: url("/galerias/acesorios/icon__footer__4.png");
+}
+
+.icon__footer:hover{
+    transform: translateY(-5px);
+}
+
+
+.ctn__ter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.ctn__ter a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.ctn__ter a::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    bottom: 0%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .3s ease-in-out;
+}
+
+.ctn__ter a:hover{
+    text-shadow: 0 0 10px;
+}
+
+.ctn__ter a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* ----------------------
+---------------------- */
+/* iconos footer */
+
+
+
+
+
+
+
+/* -----------------------------
+---------------------------- */
+
+.ctn__con{
+    position: absolute;
+    bottom: -50%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctn__con::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: .1px;
+    background-color: white;
+    top: -100%;
+}
+
+.ctn__con p{
+    font-size: 19px;
+}
+
+
+
+/* -------------------------------------
+-------------------------------------- */
+/*responsive el header*/
+@media screen and (max-width: 1300px){
+    .contenedor__barra__De__busqueda{
+        transform: translate(-1%, -50%);
+        z-index: 3;
+    }
+
+    .header img{
+        transform: scale(0);
+    }
+}
+/* ------------------------------------
+------------------------------------------ */
+/*responsive el nav*/
+@media screen and (max-width: 1300px){
+    .head{
+        gap: 0px;
+        font-size: 16px;
+        background-color: red;
+        display: none;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0px 0px;
+        justify-content: space-between;
+    }
+  
+    .princip-1{
+        scale: 0;
+    }
+}
+
+@media screen and (max-width: 1210px){
+    .head{
+
+        gap: 0px;
+        font-size: 15px;
+    }
+
+    nav{
+        padding: 10px 10px;
+    }
+
+    .barra__izquierda__navegacion{
+        left: 94%;
+    }
+  
+}
+
+
+/* ---------------------------------------
+---------------------------------------- */
+@media screen and (max-width: 1010px){
+    .head{
+
+        gap: 0px;
+        font-size: 14px;
+    }
+
+    nav{
+        padding: 10px 1px;
+    }
+
+    .contenedor__barra__De__busqueda #inputSearch{
+        padding: 15px 10px;
+        width: 450px;
+        }
+    .heade{
+        margin-left: 328px;
+    }
+
+}
+/* ------------------------------------------
+------------------------------------------- */
+@media screen and (max-width: 940px){
+    .head{
+       display: block;
+        gap: 0px;
+        font-size: 15px;
+    }
+
+    .head a{
+         gap: 0px;
+         font-size: 15px;
+        display: inline-block;
+     }
+
+    nav{
+        padding: 10px 1px;
+        height: 65px;
+        display: block;
+    }
+  
+}
+
+@media screen and (max-width: 910px){
+    .contenedor__barra__De__busqueda #inputSearch{
+    padding: 15px 10px;
+    width: 350px;
+    }
+}
+
+@media screen and (max-width: 740px){    
+     nav{
+        height: 50px;
+        padding: 0px 0px;
+     }
+     
+     .header{
+        height: 90px;
+     }
+ 
+     .header nav .head{
+         transform: scale(0);
+     }
+
+     .barra__izquierda__navegacion{
+        left: 89%;
+    }
+/*barra de busqueda y menu*/
+   .contenedor__barra__De__busqueda{
+     transform: scale(0);
+
+   }
+ 
+   .contenedor__De__mebu__Y__lupa{
+     transform: scale(1);
+     margin-top: 20px;
+     margin-left: 40px;
+   }
+/*opciones de catalogo contactoanaos y ubicacion*/
+   .contenedor__nav__Secundario{
+    transform: scale(1);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -58px;
+   }
+/*parte del parrafo principal*/
+       .principa-3 h1{
+        font-size: 29px;
+     }  
+
+     .principa-3 p{
+        width: 400px;
+        background-color: transparent;
+        font-size: 29px;
+        margin-top: 5px;
+     }  
+     .principa-3 h1::after{
+        margin-top: 40px;
+     }
+
+     .principa-3 h1::before{
+        margin-left: 348px;
+        margin-top: 35px;
+     }
+
+     .contenedor{
+         margin-top: 180px;
+         margin-left: 30px;
+     }
+
+/*boton de perzonalisa tu puerta*/
+
+     #diseñar__mi__puerta{
+        padding: 14px 70px;
+     }
+
+/*contenedor flecha para abajo*/
+    
+    .contenedor__De__flecha{
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 572px){
+    .contenedor__nav__Secundario{
+        transform: scale(1);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: -58px;
+       }
+       
+
+}
+
+@media screen and (max-width: 562px){
+    .contenedor__nav__Secundario{
+        transform: scale(1);
+        left: 50%;
+        background-color: transparent;
+        transform: translate(-50%, -50%);
+        margin-top: -98px;
+       }
+       
+
+}
+
+@media screen and (max-width: 500px){
+    
+/*nav*/
+    nav{
+       height: 50px;
+       padding: 0px 0px;
+    }
+
+    .header nav .head{
+        transform: scale(0);
+    }
+/*barra de busqueda y lupa*/
+  .contenedor__barra__De__busqueda{
+    transform: scale(0);
+  }
+
+  .contenedor__De__mebu__Y__lupa{
+    transform: scale(1);
+    margin-top: 20px;
+    margin-left: -5px;
+  }
+/*opciones de catalogo contactoanaos y ubicacion*/
+     .contenedor__nav__Secundario{
+        transform: scale(1);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: -98px;
+       }
+
+/*parte del parrafo principal*/
+     .principa-3 h1{
+        font-size: 29px;
+     }  
+
+     .principa-3 p{
+        width: 400px;
+        background-color: transparent;
+        font-size: 29px;
+        margin-top: 5px;
+     }  
+     .principa-3 h1::after{
+        margin-top: 40px;
+     }
+
+     .principa-3 h1::before{
+        margin-left: 348px;
+        margin-top: 35px;
+     }
+
+     .contenedor{
+         margin-top: 180px;
+         margin-left: 30px;
+     }
+
+/*boton de perzonalisa tu puerta*/
+
+     #diseñar__mi__puerta{
+        padding: 14px 70px;
+     }
+/*contenedor flecha para abajo*/
+    
+    .contenedor__De__flecha{
+        margin-left: 40px;
+    }
+}

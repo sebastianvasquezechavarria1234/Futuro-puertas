@@ -1,0 +1,3182 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+
+
+/*fon famili delgado*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&family=Quicksand:wght@300&family=Roboto:ital,wght@1,100&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+:root{
+    --color1: rgb(255, 94, 0);
+    --colo2: rgb(150, 6, 69);
+    --color-3: #232323;
+    --linear-gradient: linear-gradient(225deg, rgba(0, 0, 0, 0.859), rgba(7, 7, 7, 0.479), rgba(0, 0, 0, 0.866));
+}
+
+body{
+    animation: body__anm 2s;
+}
+@keyframes body__anm {
+    0%{
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    100%{
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    overflow-x:hidden ;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/* ---------------------------------
+--------------------------------- */
+/* contenedor de animacion */
+.ctn__D__anm{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-3);
+    margin-top: -900px;
+    animation: ctn__anm 1.5s;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes ctn__anm {
+    0%{
+       margin-top: 0;
+    }
+    40%{
+        margin-top: 0;
+    }
+
+    100%{
+        margin-top: -900px;
+    }
+}
+
+.sm__ctn{
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.sm__ctn h1{
+    color: white;
+    animation: sm .5s;
+}
+@keyframes sm {
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+/*barra de lupa y de menu*/
+.contenedor__menu__pantalla{
+    position: absolute;
+     width: 100%;
+     height: 1vh;
+     background-color: none;
+     z-index: 100;
+     position: fixed;
+}
+
+.contenedor__De__mebu__Y__lupa{
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    left: 55%;
+    transform: translate(-10%, 35%);
+    background-color: none;
+    display: flex;
+    gap: 10px;
+    z-index: 401;
+    transform: scale(0);
+}
+/* -----------------------------------------
+------------------------------- */
+/*lupa responsive*/
+
+.contenedor__lupa{
+    cursor: pointer;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    margin-left: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+}
+
+.contenedor__lupa:hover .header__lupa{
+    border: 1px solid var(--color1);
+}
+
+.contenedor__lupa:hover .header__lupa::after{
+    background-color: var(--color1);
+}
+
+.header__lupa{
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(74, 73, 73);
+    border-radius: 50%;
+    rotate: 50deg;
+}
+
+.header__lupa::after{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 1px;
+     left: 100%;
+     top: 50%;
+    background-color: rgb(74, 73, 73);
+}
+/* -------------------------------------
+--------------------------------------- */
+/* responsive lupa y su input */
+.ctn__lupa_responsive{
+    position: fixed;
+    z-index: 200;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-3);
+    margin-top: -100px;
+    transition: all .4s;
+}
+
+#input__mn{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 19px;
+    position: absolute;
+    left: 5%;
+    top: -10%;
+    border: none;
+    outline: none;
+    color: white;
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    transition: all .5s;
+    transition-delay: .1s;
+}
+
+
+#input__mn::placeholder{
+    color: white;
+}
+
+/* contenedor__De__la equiz menu */
+.ctn__x__lupa{
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    left: 85%;
+    top: 30%;
+    border-radius: 50%;
+    border: 1px solid white;
+    transition: all 1s;
+    transition-delay: .5s;
+}
+
+.x__lupa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 1px;
+    background-color: white;
+    rotate: 45deg;
+}
+
+.x__lupa::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 1px;
+    rotate: -90deg;
+    background-color: white;
+}
+
+.ctn__x__lupa:hover{
+    background-color: #333;
+}
+/* -----------------------------------
+-------------------------------------- */
+/* menu responsive*/
+.contenedor__menu{
+    cursor: pointer;
+    width: 35px;
+    margin-left: 162px;
+    margin-top: -7px;
+    height: 35px;
+    background-color: none;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.contenedor__menu:hover .header__menu{
+    background-color: var(--color1);
+}
+
+.contenedor__menu:hover .header__menu::after{
+    background-color: var(--color1);
+}
+
+.contenedor__menu:hover .header__menu::before{
+    background-color: var(--color1);
+}
+
+.header__menu{
+    top: 36%;
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    background-color: rgb(74, 73, 73);
+}
+
+.header__menu::before{
+    content: "";
+    position: absolute;
+    margin-top: -10px;
+    width: 30px;
+    height: 1px;
+    background-color: rgb(74, 73, 73);
+    transform: scaleX(1);
+}
+
+.header__menu::after{
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    margin-top: 10px;
+    width: 30px;
+    height: 1px;
+    background-color: rgb(74, 73, 73);
+
+}
+
+
+/* --------------------------------------
+-------------------------------------- */
+/* contnedor__del__menu */
+
+
+.contenedor__de__opciones__barra__ne__navegacion{
+    position: absolute;
+    position: fixed;
+    width: 60%;
+    height: 100vh;
+    background-color: var(--color-3);
+    left: -60%;
+    z-index: 101;
+    transition: .6s;
+    transition-delay: .1s;
+    overflow-y: scroll;
+}
+
+.contenedor__de__opciones__barra__ne__navegacion::-webkit-scrollbar{
+    background-color: rgba(255, 255, 255, 0.396);
+    width: 5px;
+}
+
+
+
+.contenedor__de__opciones__barra__ne__navegacion::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 50px;
+    width: 5px;
+}
+ 
+/**/
+
+/*estilos de botones menu responsive*/
+
+ .ctn__mn__a{
+    position: absolute;
+    left: -50%;
+    top: 10%;
+    opacity: 0;
+    width: 200px;
+    height: 100%;
+    transition: all 0.8s;
+    transition-delay: .4s;
+    background-color: var(--color-3);
+    z-index: 200;
+}
+
+.contenedor__de__opciones__barra__ne__navegacion .ctn__mn__a a{
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    color: white;
+    display: block;
+    left: 0;
+    top: 0;
+    padding: 14px 14px;
+    transition: .3s;
+    position: relative;
+}
+
+.contenedor__de__opciones__barra__ne__navegacion .ctn__mn__a a:hover{
+    background-color: #333;
+    color: white;
+    transition: .3s;
+
+}
+
+.mn__new::before{
+    position: absolute;
+    content: "Nuevo";
+    top: 0%;
+    left: 50%;
+    background-color: white;
+    font-size: 11px;
+    font-weight: bold;
+    color: var(--color-3);
+    padding: 3px 8px;
+    top: 2%;
+    border-radius: 30px;
+}
+
+/* --------------------------------
+---------------------------------- */
+/* contenedor__De__la equiz menu */
+.ctn__x__mn{
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    left: 80%;
+    top: 5%;
+    border-radius: 50%;
+    border: 1px solid white;
+    transition: all 1s;
+}
+
+.x__menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 1px;
+    background-color: white;
+    rotate: 45deg;
+}
+
+.x__menu::before{
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 1px;
+    rotate: -90deg;
+    background-color: white;
+}
+
+.ctn__x__mn:hover{
+    background-color: #333;
+}
+/* -------------------------------
+--------------------------------- */
+/*barra de la derecha*/
+
+.barra__izquierda__navegacion{
+    position: absolute;
+    position: fixed;
+    width: 70px;
+    height: 300px;
+    background-color: transparent;
+    left: 95%;
+    bottom: 20%;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    z-index: 95;
+    transition: all .4s;
+    animation: anm__derecha 3s;
+    animation-delay: .7s;
+ }
+ @keyframes anm__derecha {
+     0%{
+         opacity: 0;
+     }
+ }
+
+
+
+.barra{
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.465);
+    margin-top: 3px;
+    border-radius: 3px;
+    backdrop-filter: blur(15px);
+    justify-content: center;
+
+}
+
+.barra:hover{
+    background-color: rgb(99, 98, 98);
+}
+
+/*reserva*/
+
+.reserva{
+    font-family: 'Quicksand', sans-serif;
+    
+    position: absolute;
+    margin-left: -357px;
+    margin-top: -65px;
+    background-color: none;
+    height: 80px;
+    font-size: 13px;
+    opacity: 0;
+    z-index: 80;
+
+}
+
+
+
+.barra img{
+    width: 40px;
+    margin-top: 9px;
+    z-index: 5;
+    transition: all .2s;
+
+}
+
+.barra:hover img{
+    transform: scale(1.2);
+   
+}
+
+
+
+
+/*reservar mi cita*/
+
+
+.barra1{
+    font-family: 'Quicksand', sans-serif;
+}   
+
+.barra1::before{
+    position: absolute;
+    content: "Agendar cita";
+    background-color: var(--color1);
+    margin-left: -133px;
+    margin-top: 9px;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: all .3s;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.barra1::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: all .3s;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid rgb(255, 94, 0);
+    rotate: -90deg;
+    margin-left: -97px;
+    margin-top: 1px;
+}
+
+.barra1:hover::after{
+  
+    transform: scalex(1);
+  
+}
+
+.barra1:hover::before{
+    transform-origin: left;
+    transform: scalex(1);
+}
+
+
+/*personaliza*/
+
+.barra2{
+    font-family: 'Quicksand', sans-serif;
+}   
+
+.barra2::before{
+    position: absolute;
+    content: "Personalizar mi puerta";
+    background-color: var(--color1);
+    margin-left: -189px;
+    margin-top: 9px;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: all .3s;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.barra2::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: all .3s;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid rgb(255, 94, 0);
+    rotate: -90deg;
+    margin-left: -96px;
+    margin-top: 1px;
+}
+
+.barra2:hover::after{
+  
+    transform: scalex(1);
+  
+}
+
+.barra2:hover::before{
+    transform-origin: left;
+    transform: scalex(1);
+}
+
+/*contactanos*/
+.barra3{
+    font-family: 'Quicksand', sans-serif;
+}   
+
+.barra3::before{
+    position: absolute;
+    content: "Contactanos";
+    background-color: var(--color1);
+    margin-left: -132px;
+    margin-top: 9px;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: all .3s;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.barra3::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: all .3s;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid rgb(255, 94, 0);
+    rotate: -90deg;
+    margin-left: -97px;
+    margin-top: 1px;
+}
+
+.barra3:hover::after{
+  
+    transform: scalex(1);
+  
+}
+
+.barra3:hover::before{
+    transform-origin: left;
+    transform: scalex(1);
+}
+
+/*rastear mi pedido*/
+.barra4{
+    font-family: 'Quicksand', sans-serif;
+}   
+
+.barra4::before{
+    position: absolute;
+    content: "Rastrear mi pedido";
+    background-color: var(--color1);
+    margin-left: -170px;
+    margin-top: 9px;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: all .3s;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.barra4::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: all .3s;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid rgb(255, 94, 0);
+    rotate: -90deg;
+    margin-left: -97px;
+    margin-top: 1px;
+}
+
+.barra4:hover::after{
+  
+    transform: scalex(1);
+  
+}
+
+.barra4:hover::before{
+    transform-origin: left;
+    transform: scalex(1);
+}
+
+
+.sebastian__flecha{
+    margin-top: 4px;
+    cursor: pointer;
+    position: relative;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.465);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: all .3s;
+    transform: scale(0);
+}
+
+.sebastian__flecha:hover{
+    background-color: rgb(99, 98, 98)
+}
+
+
+
+.sebastian__flecha::before{
+    font-family: 'Quicksand', sans-serif;
+    position: absolute;
+    content: "Ir hacia arriba";
+    background-color: var(--color1);
+    margin-left: -211px;
+    margin-top: -3px;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: all .3s;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.sebastian__flecha::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: all .3s;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid rgb(255, 94, 0);
+    rotate: -90deg;
+    margin-left: -120px;
+    margin-top: -35px;
+}
+
+  
+.flecha__Arriiba{
+    position: absolute;
+    height: 30px;
+    width: 2px; 
+    background-color: white;
+    animation: flecha__arriba 1s infinite linear;
+}
+
+@keyframes flecha__arriba {
+    0%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+    
+}
+
+.sebastian__flecha:hover::after{
+  
+    transform: scalex(1);
+  
+}
+
+.sebastian__flecha:hover::before{
+    transform-origin: left;
+    transform: scalex(1);
+}
+
+/*ENCABEZADO DE LA PAGINA Y SU ANIMACION DE CAIDA*/
+
+
+.contenedor__de__logo{
+    position: absolute;
+    background-color: none;
+    width: 230px;
+    height: 80px;
+    margin-left: 30px;  
+    transition: all .3s;
+}
+
+.contenedor__de__logo:focus,
+.contenedor__de__logo:active{
+    transform: scale(0.9);
+}
+
+.contenedor__de__logo:hover{
+    cursor: pointer;
+}
+
+.contenedor__de__logo:hover h1{
+    color: var(--colo2);
+
+}
+
+.contenedor__de__logo:hover .logo__futu h1{
+    background-color: var(--colo2);
+    color: white;
+}
+
+.contenedor__de__logo:hover h1::before{
+    transform: scalex(0);
+    background-color: var(--colo2);
+}
+
+.contenedor__de__logo:hover h1::after{
+    transform: scaleX(0);
+    background-color: var(--colo2);
+}
+
+header .logo__futu{
+  position: absolute;
+ 
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-left: -35px;
+  margin-top: -5px;
+  z-index: 1000;
+}
+
+header .logo__futu h1{
+    padding: 4px 10px;
+    color: white;
+    left: 0;
+    top: 0;
+    background-color: var(--color1);
+    transition: all .3s;
+}
+
+header .logo__futu h1::before{
+    position: none;
+    content: "";
+    width: 0;
+    height: 0;
+}
+
+header .logo__futu h1::after{
+    position: none;
+    content: "";
+    width: 0;
+    height: 0;
+}
+
+
+
+.header{
+
+    position: fixed;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:white;
+    width: 100%;
+    height: 150px;
+    z-index: 99;
+    /* margin-top: -150px; */
+    animation: header 2.5s;
+    animation-delay: .7s;  
+    box-shadow: 5px 5px 15px rgba(103, 103, 103, 0.534);  
+}
+@keyframes header {
+    0%{
+        transform: translateY(-300px);
+    }
+    
+}
+
+.header h1{
+    font-family: 'Fjalla One', sans-serif;
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 26px;
+    color: var(--color1);
+    transition: all .3s;
+    transform-origin: left;
+}
+
+.header h1::before{
+    position: absolute;
+    content: "";
+    width: 220px;
+    height: 3px;
+    margin-left: -40px;
+    margin-top: -12px;
+    background-color: var(--color1);
+    transition: all .3s;
+}
+
+.header h1::after{
+    position: absolute;
+    content: "";
+    width: 220px;
+    height: 3px;
+    margin-top: 48px;
+    margin-left: -210px;
+    background-color: var(--color1);
+    transition: all .3s;
+    transition-delay: .2s;
+}
+
+.contenedor__barra__De__busqueda{
+    position: absolute;
+   
+    background-color: transparent;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#inputSearch{
+    left: 0;
+    top: 0;
+    font-family: 'Quicksand', sans-serif;
+    padding: 16px 20px;
+    border-radius: 30px;
+    color: var(--color1);
+    width: 560px;
+    border:  1px solid #b2b2b2;
+    outline: none;
+    transition: all .3s;
+}
+
+#inputSearch:hover{
+    box-shadow: 0px 0px 20px rgba(201, 200, 200, 0.535);
+}
+
+#inputSearch:focus{
+    border-radius: 0px 30px 30px 0px;
+   border: 1px solid rgba(255, 132, 0, 0.665);
+}
+
+
+#inputSearch::placeholder{
+    color: #696868;
+}
+
+
+
+.heade{
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    position: absolute;
+    background-color: var(--color1);
+    color: white;
+    padding: 13px 36px;
+    margin-left: 436px;
+    margin-top: -1px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.heade:hover{
+    cursor: pointer;
+    background-color: var(--colo2);
+    transition: .3s;
+}
+
+
+.hea-1{
+    position: absolute;
+    
+    background-color: none;
+    margin-left: 1050px;
+    margin-top: 10px;
+    width: 300px;
+    
+}
+
+
+
+nav{
+    padding: 10px 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background-color: #e7e7e7;
+    margin-top: 90px;
+}
+
+
+
+nav a{
+    text-decoration: none;
+    color: #000000;
+    border-radius: 3px;
+    padding: 11px 11px;
+    transition: all .3s ease-in-out;
+
+}
+
+nav a:hover{
+    background-color: #333;
+    color: white;
+    transition: .3s;
+}
+
+.nuevo__bar::after{
+  position: absolute;
+  content: "Nuevo";
+  font-size: 11px;
+  font-weight: bold;
+  color: white;
+  padding: 3px 8px;
+  top: 2%;
+  margin-left: -30px;
+  border-radius: 30px;
+  background-color: var(--color1);
+}
+
+.head{
+    background-color: transparent;
+    display: flex;
+    gap: 0px;
+}
+
+/*nav secundario*/
+.contenedor__nav__Secundario{
+    font-family: 'Quicksand', sans-serif;
+    position: absolute;
+    margin-top: -48px;
+    left: 35%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    display: flex;
+    transform: scale(0);
+}
+
+.contenedor__nav__Secundario a{
+    padding: 20px;
+}
+
+.contenedor__nav__Secundario a:hover{
+    color: var(--color1);
+    background-color: transparent;
+}
+/*barra de navegacion de busqueda*/
+
+
+#box__search{
+    font-family: 'Quicksand', sans-serif;
+    position: fixed;
+    top: 70px;
+    left: 50%;
+    width: 560px;
+    max-height: 380px;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    z-index: 99;
+    overflow: hidden;
+    display: none;
+}
+#box__search li a{
+    font-size: 17px;
+    position: relative;
+   text-decoration: none;
+   display: block;
+   width: 100%;
+   color: black;
+   padding: 15px 70px;
+}
+
+#box__search li a::before{
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 17px;
+    left: 5%;
+    background-color: transparent;
+    background-image: url("/galerias/acesorios/icon__crt__bcd.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#box__search li a:hover{
+    color: var(--color1);
+    background-color: #f3f3f3;
+}
+
+#cover__ctn__search{
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.382);
+    backdrop-filter: blur(5px);
+    z-index: 98;
+    display: none;
+}
+/*cruz search*/
+.contendor__crux{
+    cursor: pointer;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    top: 80%;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+.crux__1{
+    position: absolute;
+    width: 35px;
+    height: 1px;
+    transform: rotate(45deg);
+    background-color: black;
+    transition: all .6s;
+}
+
+.crux__2{
+    position: absolute;
+    width: 35px;
+    height: 1px;
+    transform: rotate(-45deg);
+    background-color: black;
+    transition: all .6s;
+}
+
+.contendor__crux:hover .crux__1{
+    rotate: 360deg;
+    background-color: var(--color1);
+}
+.contendor__crux:hover .crux__2{
+   rotate: 360deg;
+   background-color: var(--color1);
+}
+
+.contendor__crux::after{
+    position: absolute;
+    content: "Cerrar";
+    background-color: var(--color1);
+    transition: all .3s;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 30px 0px 0px 30px;
+    margin-left: -180px;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.contendor__crux::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    transform: scalex(0);
+    transform-origin: right;
+    transition: all .3s;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid rgb(255, 94, 0);
+    rotate: -90deg;
+    margin-left: -134px;
+    margin-top: -32px;
+
+}
+
+.contendor__crux:hover::after{
+    transform: scaleX(1);
+}
+
+.contendor__crux:hover::before{
+    transform: scaleX(1);
+}
+
+
+
+
+/* -----------------------------------
+----------------------------------- */
+/*fondo principal*/
+.container__fondo__principal{
+    font-family: 'Quicksand', sans-serif;
+    position: absolute;
+    width: 100%;
+    height: 65vh;
+    margin-top: 150px;
+    position: fixed;
+    background-image: url("/galerias/acesorios/puertica-3.jpg");
+    background-position: center;
+    background-size: cover;
+    animation: fondo 20s infinite linear;
+}
+@keyframes fondo{
+    0%{
+      
+        background-image: url("/galerias/acesorios/puertica-3.jpg");
+    
+    }
+    20%{
+      
+        background-image: url("/galerias/acesorios/puertica-3.jpg");
+    
+    }
+    
+    25%{
+      
+        background-image: url("/galerias/acesorios/puertica-4.jpg");
+    
+    }
+    45%{
+      
+        background-image: url("/galerias/acesorios/puertica-4.jpg");
+    
+    }
+    
+    50%{
+       
+        background-image: url("/galerias/acesorios/puertica-5.jpg");
+    
+    }
+    70%{
+       
+        background-image: url("/galerias/acesorios/puertica-5.jpg");
+    
+    }
+    
+    75%{
+     
+        background-image: url("/galerias/acesorios/puertica-6.jpg");
+    
+    }
+    100%{
+     
+        background-image: url("/galerias/acesorios/puertica-6.jpg");
+    
+    }
+}
+
+
+.principal__capa{
+    position: absolute;
+    width: 100%;
+    height: 65vh;
+    position: fixed;
+    background: var(--linear-gradient);
+}
+
+
+.ctn__d__parra__prin{
+    background-color: transparent;
+    padding: 140px 100px;
+}
+
+.h1__all{
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.h1__all h1{
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    background-color: none;
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 4px 4px 4px black;
+    animation: h1__anm 1.3s;
+    animation-delay: .7s;
+}
+@keyframes h1__anm {
+    0%{
+        transform: translateY(200px);
+    }
+}
+
+.h1__weigh h1{
+    font-weight: 100;
+}
+
+
+
+.ctn__d__parra__prin::before{
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 4px;
+    rotate: -90deg;
+    margin-left: -90px;
+    margin-top: 70px;
+    background-color: var(--color1);
+    animation: h1__before__anm 2s;
+    animation-delay: .7s;
+}
+@keyframes h1__before__anm {
+    0%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*flecha pa bajo*/
+
+
+.contenedor__De__flecha{
+    cursor: pointer;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 350px;
+    overflow: hidden;
+}
+
+.contenedor__De__flecha:hover{
+    background-color: rgb(207, 206, 206);
+}
+
+.contenedor__De__flecha img{
+    width: 30px;
+    animation: flechaabajo 2s infinite linear;
+
+}
+@keyframes flechaabajo {
+    0%{
+        transform: translateY(-45px);
+    }
+    
+}
+
+
+/*flecha donde nos dirige al foemulario*/
+
+.flecha__direccion{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: none;
+    margin-top: 700px;
+    left: 50%;
+}
+
+/*parrafo antes de las imagenes*/
+
+#parrafo__imagen{
+    margin-left: 100px;
+    margin-top: 50px;
+  
+
+}
+
+
+
+/*section de materiales*/
+
+.materiales{
+    font-family: 'Quicksand', sans-serif;
+    position: absolute;
+    width: 100%;
+    height: 300vh;
+    margin-top: 100px;
+    background-color: white;
+    margin-top: 800px;
+    z-index: 50;
+}
+/*primeros todos los botones de disponibles o agoados*/
+.material-1 a{
+    position: absolute;
+  text-decoration: none;
+  color: white;
+  padding: 14px 113px;
+  border-radius: 3px;
+  background-color: var(--color1);
+  margin-top: 10px;
+  transition: .3s;
+}
+.material-1 a:hover{
+    transform: translateY(-4px);
+    background-color: var(--colo2);
+    box-shadow: 5px 5px 15px rgba(150, 6, 68, 0.531);
+    transition: .3s;
+}
+
+
+.material-2 a{
+    position: absolute;
+  text-decoration: none;
+  color: white;
+  padding: 14px 119px;
+  border-radius: 3px;
+  background-color: var(--color1);
+  margin-top: 10px;
+  transition: .3s;
+}
+.material-2 a:hover{
+    transform: translateY(-4px);
+    background-color: var(--colo2);
+    box-shadow: 5px 5px 15px rgba(150, 6, 68, 0.531);
+    transition: .3s;
+}
+
+.material-3 a{
+    position: absolute;
+  text-decoration: none;
+  color: white;
+  padding: 14px 113px;
+  border-radius: 3px;
+  background-color: var(--color1);
+  margin-top: 10px;
+  transition: .3s;
+}
+.material-3 a:hover{
+    transform: translateY(-4px);
+    background-color: var(--colo2);
+    box-shadow: 5px 5px 15px rgba(150, 6, 68, 0.531);
+    transition: .3s;
+}
+
+
+.material-4 a{
+    position: absolute;
+  text-decoration: none;
+  color: white;
+  padding: 14px 113px;
+  border-radius: 3px;
+  background-color: var(--color1);
+  margin-top: 10px;
+  transition: .3s;
+}
+.material-4 a:hover{
+    transform: translateY(-4px);
+    background-color: var(--colo2);
+    box-shadow: 5px 5px 15px rgba(150, 6, 68, 0.531);
+    transition: .3s;
+}
+
+.material-5 a{
+    position: absolute;
+  text-decoration: none;
+  color: white;
+  padding: 14px 113px;
+  border-radius: 3px;
+  background-color: var(--color1);
+  margin-top: 10px;
+  transition: .3s;
+}
+.material-5 a:hover{
+    transform: translateY(-4px);
+    background-color: var(--colo2);
+    box-shadow: 5px 5px 15px rgba(150, 6, 68, 0.531);
+    transition: .3s;
+}
+
+.material-6 a{
+    position: absolute;
+  text-decoration: none;
+  color: white;
+  padding: 14px 113px;
+  border-radius: 3px;
+  background-color: var(--color1);
+  margin-top: 10px;
+  transition: .3s;
+}
+.material-6 a:hover{
+    transform: translateY(-4px);
+    background-color: var(--colo2);
+    box-shadow: 5px 5px 15px rgba(150, 6, 68, 0.531);
+    transition: .3s;
+}
+
+.material-7 a{
+    position: absolute;
+  text-decoration: none;
+  color: white;
+  padding: 14px 113px;
+  border-radius: 3px;
+  background-color: var(--color1);
+  margin-top: 10px;
+  transition: .3s;
+}
+.material-7 a:hover{
+    transform: translateY(-4px);
+    background-color: var(--colo2);
+    box-shadow: 5px 5px 15px rgba(150, 6, 68, 0.531);
+    transition: .3s;
+}
+
+.material-8 a{
+    position: absolute;
+  text-decoration: none;
+  color: white;
+  padding: 14px 113px;
+  border-radius: 3px;
+  background-color: var(--color1);
+  margin-top: 30px;
+  transition: .3s;
+}
+.material-8 a:hover{
+    transform: translateY(-4px);
+    background-color: var(--colo2);
+    box-shadow: 5px 5px 15px rgba(150, 6, 68, 0.531);
+    transition: .3s;
+}
+
+.material-9 a{
+    position: absolute;
+  text-decoration: none;
+  color: white;
+  padding: 14px 119px;
+  border-radius: 3px;
+  background-color: var(--color1);
+  margin-top: 10px;
+  transition: .3s;
+}
+.material-9 a:hover{
+    transform: translateY(-4px);
+    background-color: var(--colo2);
+    box-shadow: 5px 5px 15px rgba(150, 6, 68, 0.531);
+    transition: .3s;
+}
+
+.material-10 a{
+    position: absolute;
+  text-decoration: none;
+  color: white;
+  padding: 14px 107px;
+  border-radius: 3px;
+  background-color: var(--color1);
+  margin-top: 10px;
+  transition: .3s;
+}
+.material-10 a:hover{
+    transform: translateY(-4px);
+    background-color: var(--colo2);
+    box-shadow: 5px 5px 15px rgba(150, 6, 68, 0.531);
+    transition: .3s;
+}
+
+.material-11 a{
+    position: absolute;
+  text-decoration: none;
+  color: white;
+  padding: 14px 107px;
+  border-radius: 3px;
+  background-color: var(--color1);
+  margin-top: 10px;
+  transition: .3s;
+}
+.material-11 a:hover{
+    transform: translateY(-4px);
+    background-color: var(--colo2);
+    box-shadow: 5px 5px 15px rgba(150, 6, 68, 0.531);
+    transition: .3s;
+}
+
+.material-12 a{
+    position: absolute;
+  text-decoration: none;
+  color: white;
+  padding: 14px 116px;
+  border-radius: 3px;
+  background-color: var(--color1);
+  margin-top: 10px;
+  transition: .3s;
+}
+.material-12 a:hover{
+    transform: translateY(-4px);
+    background-color: var(--colo2);
+    box-shadow: 5px 5px 15px rgba(150, 6, 68, 0.531);
+    transition: .3s;
+}
+/*titulo de nuestros materiales*/
+.materiale{
+    
+    width: 1300px;
+    padding: 30px 30px 30px 30px;
+    background-color:none;
+    margin-bottom: 10px;
+}
+
+.materiale h1{
+    margin-top: 80px;
+    text-align: center;
+    justify-content: center;
+    font-size: 23px;
+    color: var(--color1);
+}
+
+
+.materiale h1::after{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background-color: var(--color1);
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+
+.materiale h1::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background-color: var(--color1);
+    margin-top: 15px;
+    margin-left: -220px;
+}
+
+
+
+
+/*primer material*/
+.material-1{
+    position: absolute;
+    width: 300px;
+    background-color: none;
+    margin-left: 30px;
+}
+
+.material-1 p{
+    margin-top: 10px;
+    font-size: 17px;
+    color: #333;
+}
+
+.material-1 p::after{
+    content: "Referecia domus stap-VT-48MOL-35";
+    color: #333;
+}
+
+.material-1 img{
+    width: 300px;
+    transition: .4s;
+}
+
+.material-1 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.materia-1{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+
+/*2 material*/
+.material-2{
+    position: absolute;
+    width: 300px;
+    background-color: none;
+    margin-left: 360px;
+}
+
+.material-2 p{
+    font-size: 17px;
+    color: #333;
+}
+
+.material-2 p::after{
+   
+    content: "Referencia domus stap pack-32";
+    color: #333;
+}
+
+.material-2 img{
+    width: 300px;
+    transition: .4s;
+}
+
+.material-2 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.materia-2{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+.material-2 .mater-1{
+    background-color: var(--colo2);
+}
+
+.material-2 .mater-1:hover{
+    background-color: var(--color1);
+    box-shadow:5px 5px 15px rgb(225, 94, 0);
+}
+
+
+/*3 material*/
+.material-3{
+    position: absolute;
+    width: 300px;
+    background-color: none;
+    margin-left: 690px;
+}
+
+.material-3 p{
+    font-size: 17px;
+    color: #333;
+}
+
+.material-3 p::after{
+    content: "Referencia domus-10";
+    color: #333;
+}
+
+.material-3 img{
+    width: 300px;
+    transition: .4s;
+}
+
+.material-3 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.materia-3{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+
+
+/*4 material*/
+.material-4{
+    position: absolute;
+    width: 300px;
+    background-color: none;
+    margin-left: 1023px;
+}
+
+.material-4 p{
+    font-size: 17px;
+    color: #333;
+}
+
+.material-4 p::after{
+    content: "Referencia domus stap pack-10ASTRE-8";
+    color: #333;
+}
+
+.material-4 img{
+    width: 300px;
+    transition: .4s;
+}
+
+.material-4 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.materia-4{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+
+
+/*5 material*/
+.material-5{
+    position: absolute;
+    width: 300px;
+    background-color: none;
+    margin-left: 30px;
+    margin-top: 450px;
+}
+
+.material-5 p{
+    font-size: 17px;
+    color: #333;
+}
+
+.material-5 p::after{
+    content: "Referencia domus stap pack-10ASTRE-8";
+    color: #333;
+}
+
+.material-5 img{
+    width: 300px;
+    transition: .4s;
+}
+
+.material-5 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.materia-5{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+
+/*6 material*/
+.material-6{
+    position: absolute;
+    width: 300px;
+    margin-top: 450px;
+    background-color: none;
+    margin-left: 360px;
+}
+
+.material-6 p{
+    font-size: 17px;
+    color: #333;
+}
+
+.material-6 p::after{
+    content: "Referencia domus stap pack-10ASTRE-8";
+    color: #333;
+}
+
+.material-6 img{
+    width: 300px;
+    transition: .4s;
+}
+
+.material-6 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.materia-6{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+
+
+
+
+/*7 material*/
+.material-7{
+    position: absolute;
+    width: 300px;
+    background-color: none;
+    margin-left: 690px;
+    margin-top: 450px;
+}
+
+.material-7 p{
+    font-size: 17px;
+    color: #333;
+}
+
+.material-7 p::after{
+    content: "Referencia domus stap pack-1BTRRE-16";
+    color: #333;
+}
+
+.material-7 img{
+    width: 300px;
+    transition: .4s;
+}
+
+.material-7 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.materia-7{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+
+
+/*8 material*/
+.material-8{
+    position: absolute;
+    width: 300px;
+    background-color: none;
+    margin-left: 1023px;
+    margin-top: 450px;
+}
+
+.material-8 p{
+    font-size: 17px;
+    color: #333;
+}
+
+.material-8 p::after{
+    content: "Referencia domus-2";
+    color: #333;
+}
+
+.material-8 img{
+    width: 300px;
+    transition: .4s;
+}
+
+.material-8 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.materia-8{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+/*9 material*/
+.material-9{
+    position: absolute;
+    width: 300px;
+    background-color: none;
+    margin-left: 30px;
+    margin-top: 910px;
+}
+
+.material-9 p{
+    font-size: 17px;
+    color: #333;
+}
+
+.material-9 p::after{
+    content: "Referencia domus-10ASEY-451";
+    color: #333;
+}
+
+.material-9 img{
+    width: 300px;
+    transition: .4s;
+}
+
+.material-9 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.materia-9{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.material-9 .mater-1{
+    background-color: var(--colo2);
+}
+
+.material-9 .mater-1:hover{
+    background-color: var(--color1);
+    box-shadow:5px 5px 15px rgb(225, 94, 0);
+}
+
+
+/*10 material*/
+.material-10{
+    position: absolute;
+    width: 300px;
+    background-color: none;
+    margin-left: 360px;
+    margin-top: 910px;
+}
+
+.material-10 p{
+    font-size: 17px;
+    color: #333;
+}
+
+.material-10 p::after{
+    content: "Referencia domus stap-RE-841";
+    color: #333;
+}
+
+.material-10 img{
+    width: 300px;
+    transition: .4s;
+}
+
+.material-10 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.materia-10{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+
+
+/*11 material*/
+.material-11{
+    position: absolute;
+    width: 300px;
+    background-color: none;
+    margin-left: 690px;
+    margin-top: 910px;
+}
+
+.material-11 p{
+    font-size: 17px;
+    color: #333;
+}
+
+.material-11 p::after{
+    content: "Referencia domus stap pack-10AE-234";
+    color: #333;
+}
+
+.material-11 img{
+    width: 300px;
+    transition: .4s;
+}
+
+.material-11 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.materia-11{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+/*12 material*/
+.material-12{
+    position: absolute;
+    width: 300px;
+    background-color: none;
+    margin-left: 1023px;
+    margin-top: 910px;
+}
+
+.material-12 p{
+    font-size: 17px;
+    color: #333;
+}
+
+.material-12 p::after{
+    content: "Referencia domus pack-1STRE-1362";
+    color: #333;
+}
+
+.material-12 img{
+    width: 300px;
+    transition: .4s;
+}
+
+.material-12 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.materia-12{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.material-12 .mater-1{
+    background-color: var(--colo2);
+}
+
+.material-12 .mater-1:hover{
+    background-color: var(--color1);
+    box-shadow:5px 5px 15px rgb(225, 94, 0);
+}
+/*barra de descripciones*/
+
+.mate-1{
+    position: absolute;
+    width: 100%;
+    height: 265px;
+    background-image: linear-gradient(225deg, rgb(150, 6, 69), rgb(255, 94, 0), rgb(255, 94, 0));
+    margin-top: 1400px;
+    color: white;
+    z-index: 30;
+
+}
+
+.mate-1 h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+.mate-1 p{
+    font-size: 17px;
+}
+
+.mat-1{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    margin-left: 30px;
+    margin-top: 40px;
+    background-color: none;
+}
+    
+
+.mat-2{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    background-color: none;
+    margin-left: 480px;
+    margin-top: 40px;
+}
+    
+
+.mat-3{
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    background-color: none;
+    margin-left: 930px;
+    margin-top: 40px;
+}
+
+
+
+.mat-4{
+    position: absolute;
+    margin-left: 1065px;
+    margin-top: 220px;
+    width: 500px;
+    color: rgba(255, 255, 255, 0.415);
+}
+
+
+
+
+
+/*imagenes relacionadas*/
+
+.productos__relacionados{
+    font-family: 'Quicksand', sans-serif;
+    position: absolute;
+    width: 100%;
+    height: 160vh;
+    background-color: white;
+    z-index: 2;
+    margin-top: 2600px;
+}
+
+.semicontenedor__adaptable{
+    width: 100%;
+    height: 150vh;
+    margin-top: -450px;
+    background-color: none;
+}
+
+.descric-1{
+    padding: 0px 0px;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    margin-top: 450px;
+    background-color: none;
+    display: flex;
+
+}
+
+.descric-1 h1{
+    font-size: 23px;
+    position: absolute;
+    margin-top: -100px;
+    color: var(--color1);
+    left: 50%;
+    transform: translate(
+        -50%, -50%
+    );
+}
+
+
+
+.descric-1 h1::before{
+    position: absolute;
+    content: "";
+    width: 400px;
+    height: 2px;
+    margin-left: -420px;
+    margin-top: 18px;
+    background-color: var(--color1);
+}
+
+
+.descric-1 h1::after{
+    position: absolute;
+    content: "";
+    width: 400px;
+    height: 2px;
+    margin-left: 20px;
+    margin-top: 18px;
+    background-color: var(--color1);
+}
+
+
+.descri-1{
+    width: 300px;
+    position: absolute;
+    background-color: none;
+    margin-left: 30px;
+}
+
+
+
+.descri-1 img{
+    width: 300px;
+    transition: .4s;
+}
+
+.descri-1 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+
+.descr{
+    width: 300px;
+    height: 300px;
+    background-color: none;
+    overflow: hidden;
+}
+
+.descr-1{
+   
+    font-size: 17px;
+    color: #333;
+}
+
+.desc-1{
+    margin-top: 10px;
+    color: rgb(37, 37, 37);
+}
+
+.desc-1::after{
+    content: "$584.500";
+    margin-left: 10px;
+    color: var(--color1);
+}
+
+.descric-1 .anuncio__nuevo__1{
+    position: absolute;
+    background-color: none;
+    margin-top: -445px;
+  
+}
+
+
+
+.anuncio__nuevo{
+    position: absolute;
+  width: 0;
+  height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 150px solid var(--color1);
+  border-left: 160px solid transparent;
+  border-right: 0px solid transparent;
+  margin-left: 175px;
+  margin-top: 5px;
+  rotate: -90deg;
+  z-index: 4;
+}
+
+.anuncio__nuevo p{
+    font-weight: bolder;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: white;
+    margin-left: -90px;
+    margin-top: 210px;
+    rotate: 140deg;
+}
+
+.anuncio__nuevo__2{
+    margin-left: 145px;
+
+}
+
+#btn__agragar__al__carito__de__Compras{
+    position: absolute;
+    text-decoration: none;
+    background-color: var(--color1);
+    color: white;
+    padding: 14px 45px;
+    margin-top: 10px;
+    transition: all .3s;
+ 
+}
+
+#btn__agragar__al__carito__de__Compras:hover{
+    transform: translateY(-4px);
+    background-color: var(--colo2);
+    box-shadow: 5px 5px 15px rgba(150, 6, 68, 0.704);
+}
+
+
+
+/*imagen2*/
+
+
+.descri-2{
+    width: 300px;
+    position: absolute;
+    background-color: none;
+    margin-left: 360px;
+}
+
+
+
+.descri-2 img{
+    width: 300px;
+    transition: .4s;
+}
+
+.descri-2 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+
+.descr-2{
+    width: 300px;
+    height: 300px;
+    background-color: none;
+    overflow: hidden;
+}
+
+.descr-2{
+    font-size: 17px;
+    color: #333;
+}
+
+.desc-2{
+    color: rgb(37, 37, 37);
+    margin-top: -250px;
+}
+
+.desc-2::after{
+    content: "$300.250";
+    margin-left: 10px;
+    color: var(--color1);
+}
+
+
+/*imagen3*/
+
+.descri-3{
+    width: 300px;
+    position: absolute;
+    background-color: none;
+    margin-left: 690px;
+}
+
+
+
+.descri-3 img{
+    width: 300px;
+    transition: .4s;
+}
+
+.descri-3 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+
+.descr-3{
+    width: 300px;
+    height: 300px;
+    background-color: none;
+    overflow: hidden;
+}
+
+.descr-3{
+    font-size: 17px;
+    color: #333;
+}
+
+.desc-3{
+    color: rgb(37, 37, 37);
+    margin-top: -250px;
+}
+
+.desc-3::after{
+    content: "$399.106";
+    margin-left: 10px;
+    color: var(--color1);
+}
+
+/*imagen4*/
+
+.descri-4{
+    width: 300px;
+    position: absolute;
+    background-color: none;
+    margin-left: 1020px;
+}
+
+
+
+.descri-4 img{
+    width: 300px;
+    transition: .4s;
+}
+
+.descri-4 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+
+.descr-4{
+    width: 300px;
+    height: 300px;
+    background-color: none;
+    overflow: hidden;
+}
+
+.descr-4{
+    font-size: 17px;
+    color: #333;
+}
+
+.desc-4{
+    color: rgb(0, 0, 0);
+    margin-top: -250px;
+}
+
+.desc-4::after{
+    content: "$379.250";
+    margin-left: 10px;
+    color: var(--color1);
+}
+/* ---------------------------------- */
+/* hover p */
+.Hover:hover .hover{
+    color: var(--color1);
+}
+.hover{
+    margin-top: 10px;
+    background-color: transparent;
+    transition: all .3s;
+}
+
+
+
+/* -------------------------
+--------------------- */
+/*pie de pagina*/
+/* -------------------
+------------------- */
+/* footer marcas */
+.footer__mr{
+    position: absolute;
+    width: 100%;
+    height: 43vh;
+    background-color: var(--color-3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    top: -36%;
+}
+
+.footer__mr h1{
+    font-size: 24px;
+    position: absolute;
+    top: 18%;
+}
+
+.footer__mr::after{
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: .1px;
+    background-color: white;
+    bottom: 0%;
+}
+
+.icon__mr{
+    width: 230px;
+    height: 100px;
+    margin-top: 90px;
+    background-color: transparent;
+    background-image: url("/galerias/acesorios/icon__mr__1-removebg-preview.png");
+    background-position: center;
+    background-size: cover;
+    transition: all .2s;
+}
+
+.icon__mr:hover{
+    filter: drop-shadow(3px 3px 3px black);
+    transform: scale(1.1);
+}
+
+.icon__mr:nth-child(2){
+    background-image: url("/galerias/acesorios/icon__mr__2-removebg-preview.png");
+}
+
+.icon__mr:nth-child(3){
+    background-image: url("/galerias/acesorios/icon__mr__3-removebg-preview.png");
+}
+
+.icon__mr:nth-child(4){
+    background-image: url("/galerias/acesorios/icon__mr__4-removebg-preview.png");
+}
+/* --------------------------------
+--------------------------------- */
+/*pie de pagina*/
+.footer{
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+     width: 100%;
+    height: 110vh;
+    background-color:var(--color-3);
+    z-index: 75;
+    margin-top: 3840px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctn__flex__footer{
+    position: absolute;
+    top: 10%;
+    background-color: transparent;
+    display: flex;
+    gap: 80px;
+}
+/* -----------------------
+-------------------------- */
+/* lg footer */
+
+footer .ctn__all__footer .ctn__lg{
+    font-family: 'Fjalla One', sans-serif;
+    cursor: pointer;
+    padding: 20px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+}
+
+footer .ctn__all__footer .ctn__lg:hover{
+    transform: translateY(-5px);
+    filter: drop-shadow(0px 0px 3px black);
+}
+
+footer .ctn__all__footer .ctn__lg .ctn__f h1{
+    padding: 5px 9px;
+    font-size: 35px;
+    color: var(--color-3);
+    background-color:white;
+}
+
+footer .ctn__all__footer .ctn__lg .ctn__rt h1{
+    position: relative;
+    font-size: 32px;
+    margin-left: 3px;
+}
+
+.ctn__rt h1::before{
+    position: absolute;
+    content: "";
+    width: 125%;
+    height: 3px;
+    background-color: white;
+    top: -32%;
+    left: -22%;
+}
+
+
+
+.ctn__rt h1::after{
+    position: absolute;
+    content: "";
+    width: 125%;
+    height: 3px;
+    background-color: white;
+    bottom: -32%;
+    left: -22%;
+}
+
+
+
+/* -----------------------
+------------------------ */
+/* hover a */
+.ctn__all__footer{
+    position: relative;
+    display: block;
+    background-color: transparent;
+}
+
+.ctn__all__footer h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.ctn__all__footer a{
+    position: relative;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+   padding: 9px 0px;
+}
+
+.ctn__all__footer a::before{
+    position: absolute;
+    content: "";
+    width: 36%;
+    height: 2px;
+    background-color: white;
+    bottom: 20%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .3s ease-in-out;
+}
+
+.ctn__all__footer a:hover{
+    text-shadow: 0 0 10px white;
+}
+
+.ctn__all__footer a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+/* ------------------------
+------------------------ */
+/* diferentes tamaños */
+.ctn__all__footer:nth-child(1) a:hover:nth-child(2)::before{
+    width: 67%;
+}
+
+.ctn__all__footer:nth-child(1) a:hover:nth-child(3)::before{
+    width: 68%;
+}
+
+.ctn__all__footer:nth-child(1) a:hover:nth-child(4)::before{
+    width: 100%;
+}
+
+.ctn__all__footer:nth-child(1) a:hover:nth-child(5)::before{
+    width: 70%;
+}
+/* ----------------------------
+------------------------ */
+/* segunda fila de los a */
+.ctn__all__footer:nth-child(2) a:hover:nth-child(2)::before{
+    width: 36%;
+}
+
+.ctn__all__footer:nth-child(2) a:hover:nth-child(3)::before{
+    width: 36%;
+}
+
+.ctn__all__footer:nth-child(2) a:hover:nth-child(4)::before{
+    width: 66%;
+}
+
+.ctn__all__footer:nth-child(2) a:hover:nth-child(5)::before{
+    width: 64%;
+}
+
+.ctn__all__footer:nth-child(2) a:hover:nth-child(6)::before{
+    width: 30%;
+}
+
+.ctn__all__footer:nth-child(2) a:hover:nth-child(7)::before{
+    width: 80%;
+}
+
+.ctn__all__footer:nth-child(2) a:hover:nth-child(8)::before{
+    width: 100%;
+}
+
+.ctn__all__footer:nth-child(2) a:hover:nth-child(9)::before{
+    width: 52%;
+}
+
+/* ----------------
+---------------- */
+/* fila__2 footer a */
+.ctn__all__footer:nth-child(3) a:hover:nth-child(2)::before{
+    width: 71%;
+}
+
+.ctn__all__footer:nth-child(3) a:hover:nth-child(3)::before{
+    width: 32%;
+}
+
+.ctn__all__footer:nth-child(3) a:hover:nth-child(4)::before{
+    width: 50%;
+}
+
+.ctn__all__footer:nth-child(3) a:hover:nth-child(5)::before{
+    width: 30%;
+}
+
+.ctn__all__footer:nth-child(3) a:hover:nth-child(6)::before{
+    width: 35%;
+}
+
+.ctn__all__footer:nth-child(3) a:hover:nth-child(7)::before{
+    width: 100%;
+}
+/* ---------------------------
+------------------------------- */
+/* fila__3 footer a */
+.ctn__all__footer:nth-child(4) a:hover:nth-child(2)::before{
+    width: 50%;
+}
+
+.ctn__all__footer:nth-child(4) a:hover:nth-child(3)::before{
+    width: 100%;
+}
+
+.ctn__all__footer:nth-child(4) a:hover:nth-child(4)::before{
+    width: 100%;
+}
+
+.ctn__all__footer:nth-child(4) a:hover:nth-child(5)::before{
+    width: 84%;
+}
+
+.ctn__all__footer:nth-child(4) a:hover:nth-child(6)::before{
+    width: 50%;
+}
+
+
+
+
+
+/* --------------------
+------------------- */
+/*iconos footer*/
+.ctn__icon__ter{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  bottom: -28%;
+  background-color: transparent;
+}
+
+.ctn__icon__footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 100%;
+    gap: 10px;
+    margin: 0 180px 0 0;
+}
+
+
+.icon__footer{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 15px;
+    border: 2px solid white;
+    background-image: url("/galerias/acesorios/icon__footer__1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .2s;
+    margin-top: -10px;
+}
+
+.icon__footer:nth-child(2){
+    background-image: url("/galerias/acesorios/icon__footer__2.png");
+}
+
+.icon__footer:nth-child(3){
+    background-image: url("/galerias/acesorios/icon__footer__3.png");
+}
+
+.icon__footer:nth-child(4){
+    background-image: url("/galerias/acesorios/icon__footer__4.png");
+}
+
+.icon__footer:hover{
+    transform: translateY(-5px);
+}
+
+
+.ctn__ter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.ctn__ter a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.ctn__ter a::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    bottom: 0%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .3s ease-in-out;
+}
+
+.ctn__ter a:hover{
+    text-shadow: 0 0 10px;
+}
+
+.ctn__ter a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* ----------------------
+---------------------- */
+/* iconos footer */
+
+
+
+
+
+
+
+/* -----------------------------
+---------------------------- */
+
+.ctn__con{
+    position: absolute;
+    bottom: -50%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctn__con::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: .1px;
+    background-color: white;
+    top: -100%;
+}
+
+.ctn__con p{
+    font-size: 19px;
+}
+
+/* ---------------------------------------
+---------------------------------------- */
+
+
+
+/*responsive el header*/
+@media screen and (max-width: 1300px){
+    .contenedor__barra__De__busqueda{
+        transform: translate(-1%, -50%);
+        z-index: 3;
+    }
+
+    .header img{
+        transform: scale(0);
+    }
+}
+
+/*responsive el nav*/
+@media screen and (max-width: 1300px){
+    .head{
+        gap: 0px;
+        font-size: 16px;
+    }
+  
+    .princip-1{
+        scale: 0;
+    }
+}
+
+@media screen and (max-width: 1210px){
+    .head{
+
+        gap: 0px;
+        font-size: 15px;
+    }
+
+    nav{
+        padding: 10px 10px;
+    }
+
+    .barra__izquierda__navegacion{
+        left: 94%;
+    }
+  
+}
+
+
+
+@media screen and (max-width: 1010px){
+    .head{
+
+        gap: 0px;
+        font-size: 14px;
+    }
+
+    nav{
+        padding: 10px 1px;
+    }
+
+    .contenedor__barra__De__busqueda #inputSearch{
+        padding: 15px 10px;
+        width: 450px;
+        }
+    .heade{
+        margin-left: 328px;
+    }
+
+}
+
+@media screen and (max-width: 940px){
+    .head{
+       display: block;
+        gap: 0px;
+        font-size: 15px;
+    }
+
+    .head a{
+         gap: 0px;
+         font-size: 15px;
+        display: inline-block;
+     }
+
+    nav{
+        padding: 10px 1px;
+        height: 65px;
+        display: block;
+    }
+  
+}
+
+@media screen and (max-width: 910px){
+    .contenedor__barra__De__busqueda #inputSearch{
+    padding: 15px 10px;
+    width: 350px;
+    }
+}
+
+@media screen and (max-width: 740px){
+    
+    
+     nav{
+         height: 50px;
+        padding: 0px 0px;
+     }
+     
+     .header{
+        height: 90px;
+     }
+ 
+     .header nav .head{
+         transform: scale(0);
+     }
+
+     .barra__izquierda__navegacion{
+        left: 89%;
+    }
+   /*barra de busqueda y menu*/
+   .contenedor__barra__De__busqueda{
+     transform: scale(0);
+
+   }
+ 
+   .contenedor__De__mebu__Y__lupa{
+     transform: scale(1);
+     margin-top: 20px;
+     margin-left: 40px;
+   }
+   /*opciones de catalogo contactoanaos y ubicacion*/
+   .contenedor__nav__Secundario{
+    transform: scale(1);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -58px;
+   }
+       /*parte del parrafo principal*/
+       .principa-3 h1{
+        font-size: 29px;
+     }  
+
+     .principa-3 p{
+        width: 400px;
+        background-color: transparent;
+        font-size: 29px;
+        margin-top: 5px;
+     }  
+     .principa-3 h1::after{
+        margin-top: 40px;
+     }
+
+     .principa-3 h1::before{
+        margin-left: 348px;
+        margin-top: 35px;
+     }
+
+     .contenedor{
+         margin-top: 180px;
+         margin-left: 30px;
+     }
+
+     /*boton de perzonalisa tu puerta*/
+
+     #diseñar__mi__puerta{
+        padding: 14px 70px;
+     }
+
+    /*contenedor flecha para abajo*/
+    
+    .contenedor__De__flecha{
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 572px){
+    .contenedor__nav__Secundario{
+        transform: scale(1);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: -58px;
+       }
+       
+
+}
+
+@media screen and (max-width: 562px){
+    .contenedor__nav__Secundario{
+        transform: scale(1);
+        left: 50%;
+        background-color: transparent;
+        transform: translate(-50%, -50%);
+        margin-top: -98px;
+       }
+       
+
+}
+
+@media screen and (max-width: 500px){
+    
+   /*nav*/
+    nav{
+       height: 50px;
+       padding: 0px 0px;
+    }
+
+    .header nav .head{
+        transform: scale(0);
+    }
+  /*barra de busqueda y lupa*/
+  .contenedor__barra__De__busqueda{
+    transform: scale(0);
+  }
+
+  .contenedor__De__mebu__Y__lupa{
+    transform: scale(1);
+    margin-top: 20px;
+    margin-left: -5px;
+  }
+     /*opciones de catalogo contactoanaos y ubicacion*/
+     .contenedor__nav__Secundario{
+        transform: scale(1);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: -98px;
+       }
+
+       /*parte del parrafo principal*/
+     .principa-3 h1{
+        font-size: 29px;
+     }  
+
+     .principa-3 p{
+        width: 400px;
+        background-color: transparent;
+        font-size: 29px;
+        margin-top: 5px;
+     }  
+     .principa-3 h1::after{
+        margin-top: 40px;
+     }
+
+     .principa-3 h1::before{
+        margin-left: 348px;
+        margin-top: 35px;
+     }
+
+     .contenedor{
+         margin-top: 180px;
+         margin-left: 30px;
+     }
+
+     /*boton de perzonalisa tu puerta*/
+
+     #diseñar__mi__puerta{
+        padding: 14px 70px;
+     }
+
+    /*contenedor flecha para abajo*/
+    
+    .contenedor__De__flecha{
+        margin-left: 40px;
+    }
+
+}

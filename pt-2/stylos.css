@@ -1,0 +1,1082 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+:root{
+    --color1: rgb(255, 94, 0);
+    --colo2: rgb(150, 6, 69);
+}
+
+/*encabezado*/
+.lup{
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    background-color: none;
+    margin-left: 270px;
+    padding: 5px 0px;
+    width: 870px;
+    height: 40px;
+    margin-top: 35px;
+}
+
+
+/*titulo futuro puertas*/
+
+.ti{
+    background-color: none;
+    width: 300px;
+    margin-left: -280px;
+    margin-top: -15px;
+    
+    position: absolute;
+  
+
+}
+
+
+
+/*barra*/
+.lop{
+    background-color: #d4d4d4;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: -150px;
+    border-radius: 0px;
+    position: fixed;
+    z-index: 10;
+   
+    
+}
+
+
+/*TITULO Y BOTONES CON ANIMACION*/
+header h1 {
+	margin: 0;
+    color: #333;
+	font-size: 36px;
+	font-weight: bold;
+}
+/*btn caidas volovel ala ´pagina principal*/
+
+.cvb{
+    position: none;
+    gap: 20px;
+    padding: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+
+
+
+
+
+.cvb:hover{
+    background-color: #333;
+    color: white;
+    transition: 0.5;
+
+}
+
+
+/*btn caidas-1*/
+
+.cvb-1{
+    padding: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 3px;
+    animation-name: asf;
+    animation-duration: 1s;
+    transition: 0.5s;
+}
+
+
+.cvb-1:hover{
+    background-color: #333;
+    color: white;
+    transition: 0.5;
+
+}
+
+
+
+
+/*btn caidas-2*/
+
+.cvb-2{
+    padding: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 3px;
+    animation-name: asf;
+    animation-duration: 1s;
+    transition: 0.5s;
+}
+
+
+.cvb-2:hover{
+    background-color: #333;
+    color: white;
+    transition: 0.5;
+
+}
+
+
+/*btn caidas-3*/
+
+.cvb-3{
+    padding: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 3px;
+    animation-name: asf;
+    animation-duration: 1s;
+    transition: 0.5s;
+}
+
+
+.cvb-3:hover{
+    background-color: #333;
+    color: white;
+    transition: 0.5;
+
+}
+
+
+/*btn caidas-4*/
+
+.cvb-4{
+    padding: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 3px;
+    animation-name: asf;
+    animation-duration: 1s;
+    transition: 0.5s;
+}
+
+
+.cvb-4:hover{
+    background-color: #333;
+    color: white;
+    transition: 0.5;
+
+}
+
+
+
+/*btn caidas-5*/
+
+.cvb-5{
+    padding: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 3px;
+    animation-name: asf;
+    animation-duration: 1s;
+    transition: 0.5s;
+}
+
+
+.cvb-5:hover{
+    background-color: #333;
+    color: white;
+    transition: 0.5;
+
+}
+
+
+/*btn caidas-6*/
+
+.cvb-6{
+    margin-left: 0px;
+    padding: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 3px;
+    animation-name: asf;
+    animation-duration: 1s;
+    transition: 0.5s;
+}
+
+
+.cvb-6:hover{
+    background-color: #333;
+    color: white;
+    transition: 0.5;
+
+}
+
+
+/*imagen*/
+.section-1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    width: 100%;
+    height: 100vh;
+    background-color: none;
+}
+
+.sebas-1 img{
+    width: 500px;
+    transition: .5s;
+
+
+}
+
+.sebas-1 img:hover{
+    transform: scale(1.4);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.sebas__zoom{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin-left: 50px;
+    margin-top: 150px;
+    background-color: red;
+    overflow: hidden;
+    
+}
+
+.seba-1{
+    cursor: pointer;
+    padding: 1px 10px;
+    color: white;
+    position: absolute;
+    background-color: var(--colo2) ;
+    margin-top: -500px;
+    margin-left: 490px;
+}
+
+
+
+/*parte izquierda*/
+.sebas-2{
+    position: absolute;
+    background-color: none;
+    margin-left: 600px;
+    margin-top: -507px;
+    width: 700px;
+    height: 500px;
+}
+
+.sebas-2 h1{
+    font-size: 20px;
+    color: rgb(37, 37, 37);
+}
+
+.sebas-2 p{
+    color: #333;
+}
+
+.sebas-2 h3{
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.seba-2{
+    font-size: 23px;
+}
+.seba-2::before{
+    position: absolute;
+    content: "";
+    margin-top: 16px;
+    width: 110px;
+    height: 1px;
+    background-color: #333;
+}
+
+.seba-2::after{
+    content: "$100.500";
+    margin-left: 40px;
+    color: var(--color1);
+}
+
+.seba-3{
+    position: absolute;
+    width: 600px;
+    height: 1px;
+    background-color: #b2b2b2;
+}
+
+
+
+input:focus,
+input:active{
+    
+    border: 1px solid #000000;
+    box-shadow: 3px 3px 30px rgba(29, 29, 29, 0.172);
+   transition: 400ms;
+}
+
+#selector-1{
+    font-size: 15px;
+    cursor: pointer;
+    padding: 5px 10px;
+    width: 600px;
+    height: 40px;
+    border:  1px solid #b2b2b2;
+    border-radius: 3px;
+    background-color: none;
+    color: #333;
+    transition:all 0.4s ease-in-out;
+}
+   
+#selector-1 option{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    width: 300px;
+    color: var(--color1);
+}
+
+.option-1{
+    background-color: rgb(255, 255, 255);
+    color: #333;
+}
+
+#selector-2{
+    font-size: 15px;
+    cursor: pointer;
+    padding: 5px 10px;
+    width: 600px;
+    height: 40px;
+    border:  1px solid #b2b2b2;
+    border-radius: 3px;
+    background-color: none;
+    color: #333;
+    transition:all 0.4s ease-in-out;
+}
+
+
+#selector-2 option{
+    cursor: pointer;
+   
+    color: var(--color1);
+}
+
+#selector-3{
+    cursor: pointer;
+    border:  1px solid #b2b2b2;
+    padding: 0px 20px;
+    margin-top: 0px;
+    margin-left: 00px;
+    position: absolute;
+    width: 600px;
+    height: 40px;
+    border-radius: 3px;
+    color: #333;
+  
+}
+
+#selector-3 option{
+    cursor: pointer;
+  
+    color: var(--color1);
+}
+
+.btn-1{
+    padding: 10px 30px;
+    position: absolute;
+    margin-left:0px;
+    margin-top: 55px;
+    text-decoration: none;
+    background-color: rgb(255, 94, 0);
+    color: white;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.btn-1:hover{
+    transform: translateY(-5px);
+    background-color: var(--colo2);
+    transition: .4s;
+    box-shadow: 5px 5px 10px rgba(150, 6, 68, 0.483);
+}
+
+.btn-2{
+    padding: 10px 30px;
+    position: absolute;
+    margin-left:190px;
+    margin-top: 55px;
+    text-decoration: none;
+    background-color: rgb(255, 94, 0);
+    color: white;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.btn-2:hover{
+    transform: translateY(-5px);
+    background-color: var(--colo2);
+    transition: .4s;
+    box-shadow: 5px 5px 10px rgba(150, 6, 68, 0.483);
+}
+
+/*section-2*/
+
+.section-2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 160vh;
+    background-color: none;
+}
+
+.descripcion{
+    position: absolute;
+    background-color: none;
+    width: 1240px;
+    height: 300px;
+    margin-left: 55px;
+    margin-top: 00px;
+}
+
+.descripcio-1{
+    position: absolute;
+    margin-top: -50px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    font-size: 20px;
+    color: rgb(37, 37, 37);
+}
+
+.descripcio-2::after{
+    content: "NOTA IMPORTANTE: Las dimensiones de la puerta son entre marco y marco y de piso a marco superior.";
+    color: var(--color1);
+}
+
+
+/*iconos de compartir*/
+
+.descrici-1{
+    font-size: 14px;
+    padding: 4px 13px;
+    position: absolute;
+    display: flex;
+    background-color: none;
+    color: rgb(80, 193, 38);
+    margin-top: 200px;
+    margin-left: 60px;
+    border: 1px solid #b2b2b2;
+    border-radius: 4px;
+    gap: 8px;
+    height: 30px;
+    transition: .3s;
+}
+
+.descrici-1:hover{
+    cursor: pointer;
+    transform: translateY(-8px);
+    transition: .3s;
+    
+}
+
+.descrici-1 p{
+    margin-top: 4px;
+}
+
+.descrici-1 img{
+    margin-top: 1px;
+    width: 28px;
+    height: 28px;
+
+}
+
+
+.descrici-2{
+    font-size: 14px;
+    padding: 4px 13px;
+    position: absolute;
+    display: flex;
+    background-color: none;
+    color: rgb(0, 74, 158);
+    margin-top: 200px;
+    margin-left: 200px;
+    border: 1px solid #b2b2b2;
+    border-radius: 4px;
+    gap: 8px;
+    height: 30px;
+    transition: .3s;
+}
+
+.descrici-2:hover{
+    cursor: pointer;
+    transform: translateY(-8px);
+    transition: .3s;
+    
+}
+
+.descrici-2 p{
+    margin-top: 4px;
+}
+
+.descrici-2 img{
+    margin-top: 3px;
+    width: 25px;
+    height: 25px;
+
+}
+
+
+.descrici-3{
+    font-size: 14px;
+    padding: 4px 13px;
+    position: absolute;
+    display: flex;
+    background-color: none;
+    color: rgb(158, 0, 0);
+    margin-top: 200px;
+    margin-left: 337px;
+    border: 1px solid #b2b2b2;
+    border-radius: 4px;
+    gap: 8px;
+    height: 30px;
+    transition: .3s;
+}
+
+.descrici-3:hover{
+    cursor: pointer;
+    transform: translateY(-8px);
+    transition: .3s;
+    background-color: none;
+}
+
+.descrici-3 p{
+    margin-top: 4px;
+}
+
+.descrici-3 img{
+    margin-top: 3px;
+    width: 25px;
+    height: 25px;
+
+}
+
+
+/*imagenes relacionadas*/
+
+.descric-1{
+    padding: 0px 0px;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    margin-top: 450px;
+    background-color: none;
+    display: flex;
+
+}
+
+.descric-1 h1{
+    position: absolute;
+    margin-top: -100px;
+    left: 50%;
+    transform: translate(
+        -50%, -50%
+    );
+}
+
+.descri-1{
+    width: 300px;
+    position: absolute;
+    background-color: none;
+    margin-left: 30px;
+}
+
+
+
+.descri-1 img{
+    width: 300px;
+    transition: .4s;
+}
+
+.descri-1 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+
+.descr{
+    width: 300px;
+    height: 300px;
+    background-color: none;
+    overflow: hidden;
+}
+
+.descr-1{
+    color: #333;
+}
+
+.descr-2{
+    color: rgb(37, 37, 37);
+}
+
+.descr-2::after{
+    content: "$300.250";
+    margin-left: 10px;
+    color: var(--color1);
+}
+
+
+
+/*imagen2*/
+
+
+.descri-2{
+    width: 300px;
+    position: absolute;
+    background-color: none;
+    margin-left: 360px;
+}
+
+
+
+.descri-2 img{
+    width: 300px;
+    transition: .4s;
+}
+
+.descri-2 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+
+.descr-2{
+    width: 300px;
+    height: 300px;
+    background-color: none;
+    overflow: hidden;
+}
+
+.descr-1{
+    color: #333;
+}
+
+.descr-2{
+    color: rgb(37, 37, 37);
+}
+
+.descr-2::after{
+    content: "$300.250";
+    margin-left: 10px;
+    color: var(--color1);
+}
+
+
+/*imagen3*/
+
+.descri-3{
+    width: 300px;
+    position: absolute;
+    background-color: none;
+    margin-left: 690px;
+}
+
+
+
+.descri-3 img{
+    width: 300px;
+    transition: .4s;
+}
+
+.descri-3 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+
+.descr-3{
+    width: 300px;
+    height: 300px;
+    background-color: none;
+    overflow: hidden;
+}
+
+.descr-1{
+    color: #333;
+}
+
+.descr-2{
+    color: rgb(37, 37, 37);
+}
+
+.descr-2::after{
+    content: "$300.250";
+    margin-left: 10px;
+    color: var(--color1);
+}
+
+/*imagen4*/
+
+.descri-4{
+    width: 300px;
+    position: absolute;
+    background-color: none;
+    margin-left: 1020px;
+}
+
+
+
+.descri-4 img{
+    width: 300px;
+    transition: .4s;
+}
+
+.descri-4 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+
+.descr-4{
+    width: 300px;
+    height: 300px;
+    background-color: none;
+    overflow: hidden;
+}
+
+.descr-1{
+    color: #333;
+}
+
+.descr-2{
+    color: rgb(0, 0, 0);
+}
+
+.descr-2::after{
+    content: "$300.250";
+    margin-left: 10px;
+    color: var(--color1);
+}
+
+
+
+
+
+
+
+/*pie de pagina*/
+.footer{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(235, 235, 235);
+    margin-top: -100px;
+}
+
+
+
+
+    .foote-1{
+        position: absolute;
+        background-color: none;
+        width: 240px;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+
+.foote-1 h1{
+    font-size: 20px;
+    color: #000000;
+}
+
+.foote-1 p{
+    color: #333;
+    margin-top: 10px;
+    transition: .3s;
+}
+
+.foote-1 p:hover{
+    cursor: pointer;
+    color: var(--color1);
+    transition: .3s;
+}
+
+
+.foote-2{
+    position: absolute;
+    background-color: none;
+    width: 240px;
+    margin-left: 345px;
+    margin-top: 50px;
+}
+
+.foote-2 h1{
+    font-size: 20px;
+    color: #000000;
+}
+
+.foote-2 p{
+    color: #333;
+    margin-top: 10px;
+    transition: .3s;
+}
+
+.foote-2 p:hover{
+    cursor: pointer;
+    color: var(--color1);
+    transition: .3s;
+}
+
+
+
+.foote-3{
+    position: absolute;
+    background-color: none;
+    width: 240px;
+    margin-left: 600px;
+    margin-top: 50px;
+}
+
+.foote-3 h1{
+    font-size: 20px;
+    color: #000000;
+}
+
+.foote-3 p{
+    color: #333;
+    margin-top: 10px;
+    transition: .3s;
+}
+
+.foote-3 p:hover{
+    cursor: pointer;
+    color: var(--color1);
+    transition: .3s;
+}
+
+    
+
+/*iconos*/
+
+
+.foote-4{
+    position: absolute;
+    background-color: none;
+    width: 400px;
+    height: 180px;
+    margin-left: 880px;
+    margin-top: 50px;
+}
+
+.foote-4 h1{
+    color: #000000;
+    font-size: 20px;
+}
+
+.foote-4 p{
+    color: #333;
+    
+    
+}
+
+/*icono de facebook*/
+
+.facee-a{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 0px;
+    margin-top: 100px;
+    background-color: rgb(58, 58, 255);
+}
+
+
+
+.facee{
+    position: absolute;
+    width: 50px;
+    margin-top: 100px;
+    margin-left: 0px;
+    border-radius: 50%;
+    transition: 0.3s;
+    box-shadow: 2px 5px 10px rgba(58, 58, 255, 0.651);
+    
+}
+
+.facee:hover{
+    transform: translateY(-17px) rotate(-5deg);
+    transition: 0.3s;
+    box-shadow: 2px 17px 10px rgba(58, 58, 255, 0.651);
+}
+
+
+
+/*icono de wapssap*/
+
+.facee-a-1{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 60px;
+    margin-top: 100px;
+    background-color: rgba(89, 230, 24, 0.623);
+}
+
+
+
+.facee-1{
+    position: absolute;
+    width: 50px;
+    margin-top: 100px;
+    margin-left: 60px;
+    border-radius: 50%;
+    transition: 0.3s;
+    box-shadow: 2px 5px 10px rgba(89, 230, 24, 0.856);
+    
+}
+
+.facee-1:hover{
+    transform: translateY(-17px) rotate(5deg);
+    transition: 0.3s;
+    box-shadow: 2px 17px 10px rgb(89, 230, 24);
+}
+
+
+
+/*icono de instagram*/
+
+.facee-a-2{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 120px;
+    margin-top: 100px;
+    background-color: rgba(175, 25, 180, 0.692);
+}
+
+
+
+.facee-2{
+    position: absolute;
+    width: 50px;
+    margin-top: 100px;
+    margin-left: 120px;
+    border-radius: 50%;
+    transition: 0.3s;
+    box-shadow: 2px 5px 10px rgba(187, 0, 171, 0.726);
+    
+}
+
+.facee-2:hover{
+    transform: translateY(-17px) rotate(-5deg);
+    transition: 0.3s;
+    box-shadow: 2px 17px 10px rgba(175, 25, 180, 0.651);
+}
+
+
+/*icono de tik tok*/
+
+.facee-a-3{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 180px;
+    margin-top: 100px;
+    background-color: rgba(255, 255, 255, 0.301);
+}
+
+
+
+.facee-3{
+    position: absolute;
+    width: 50px;
+    margin-top: 100px;
+    margin-left: 180px;
+    border-radius: 50%;
+    transition: 0.3s;
+    box-shadow: 2px 5px 10px rgb(255, 255, 255);
+    
+}
+
+.facee-3:hover{
+    transform: translateY(-17px) rotate(-5deg);
+    transition: 0.3s;
+    box-shadow: 2px 17px 10px rgba(175, 25, 180, 0.651);
+}
+
+
+
+
+/*icono de titter*/
+
+.facee-a-4{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 240px;
+    margin-top: 100px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 5px 10px rgba(255, 255, 255, 0.726);
+}
+
+
+
+
+
+.facee-4{
+    position: absolute;
+    width: 50px;
+    margin-top: 100px;
+    margin-left: 240px;
+    border-radius: 0%;
+    transition: 0.3s;
+    
+    
+}
+
+.facee-4:hover{
+    transform: translateY(-17px) rotate(-5deg);
+    transition: 0.3s;
+   
+}
+
+
+
+
+.foote-5{
+    position: absolute;
+    margin-top: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.foote-5 img{
+    width: 900px;
+}
+
+.foote-6{
+    padding: 20px 20px;
+    position: absolute;
+    background-color: none;
+    margin-top: 500px;
+}
